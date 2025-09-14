@@ -1,0 +1,348 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GulfCoastWorkforceSolutions\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\controllers\\widgets\\newswidgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\controllers\\widgets\\newswidgetcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\views\\shared\\widgets\\_newswidget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\views\\shared\\widgets\\_newswidget.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\views\\shared\\pagetemplates\\_news.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\views\\shared\\pagetemplates\\_news.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\controllers\\pagetemplates\\newspagetemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\controllers\\pagetemplates\\newspagetemplatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|D:\\GulfCoastWorkforceSolutions\\gulfcoastworkforcesolutions\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\models\\pagetemplates\\newspagetemplate\\newsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\models\\pagetemplates\\newspagetemplate\\newsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\models\\pagetemplates\\relatedarticle\\relatedarticleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\models\\pagetemplates\\relatedarticle\\relatedarticleviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\views\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\views\\news\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\views\\shared\\pagetemplates\\_article.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\views\\shared\\pagetemplates\\_article.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|D:\\GulfCoastWorkforceSolutions\\gulfcoastworkforcesolutions\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|d:\\gulfcoastworkforcesolutions\\gulfcoastworkforcesolutions\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C67DEB96-6A9E-4531-8274-CA9A3EE84A35}|GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions.csproj|solutionrelative:gulfcoastworkforcesolutions\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 21,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_NewsWidget.cshtml",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Shared\\Widgets\\_NewsWidget.cshtml",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Views\\Shared\\Widgets\\_NewsWidget.cshtml",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Shared\\Widgets\\_NewsWidget.cshtml",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Views\\Shared\\Widgets\\_NewsWidget.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T16:33:17.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:6:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:20:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:5:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewsWidgetController.cs",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Controllers\\Widgets\\NewsWidgetController.cs",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Controllers\\Widgets\\NewsWidgetController.cs",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Controllers\\Widgets\\NewsWidgetController.cs",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Controllers\\Widgets\\NewsWidgetController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T16:14:57.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Controllers\\NewsController.cs",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Controllers\\NewsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:53:26.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RelatedArticleViewModel.cs",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Models\\PageTemplates\\RelatedArticle\\RelatedArticleViewModel.cs",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Models\\PageTemplates\\RelatedArticle\\RelatedArticleViewModel.cs",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Models\\PageTemplates\\RelatedArticle\\RelatedArticleViewModel.cs",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Models\\PageTemplates\\RelatedArticle\\RelatedArticleViewModel.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAmwCkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:43:37.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NewsPageTemplateController.cs",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Controllers\\PageTemplates\\NewsPageTemplateController.cs",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Controllers\\PageTemplates\\NewsPageTemplateController.cs",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Controllers\\PageTemplates\\NewsPageTemplateController.cs",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Controllers\\PageTemplates\\NewsPageTemplateController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T15:19:50.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_News.cshtml",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Shared\\PageTemplates\\_News.cshtml",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Views\\Shared\\PageTemplates\\_News.cshtml",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Shared\\PageTemplates\\_News.cshtml",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Views\\Shared\\PageTemplates\\_News.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T14:31:05.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NewsViewModel.cs",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Models\\PageTemplates\\NewsPageTemplate\\NewsViewModel.cs",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Models\\PageTemplates\\NewsPageTemplate\\NewsViewModel.cs",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Models\\PageTemplates\\NewsPageTemplate\\NewsViewModel.cs",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Models\\PageTemplates\\NewsPageTemplate\\NewsViewModel.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAewCcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T14:28:23.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Article.cshtml",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Shared\\PageTemplates\\_Article.cshtml",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Views\\Shared\\PageTemplates\\_Article.cshtml",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Shared\\PageTemplates\\_Article.cshtml",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Views\\Shared\\PageTemplates\\_Article.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T14:24:21.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwDAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-13T18:47:43.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T18:47:35.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAuwLEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-13T18:49:20.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T08:49:24.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\News\\Index.cshtml",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Views\\News\\Index.cshtml",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Views\\News\\Index.cshtml",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Views\\News\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-14T14:33:04.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Global.asax.cs",
+              "RelativeDocumentMoniker": "GulfCoastWorkforceSolutions\\Global.asax.cs",
+              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\GulfCoastWorkforceSolutions\\Global.asax.cs",
+              "RelativeToolTip": "GulfCoastWorkforceSolutions\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T10:50:57.119Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

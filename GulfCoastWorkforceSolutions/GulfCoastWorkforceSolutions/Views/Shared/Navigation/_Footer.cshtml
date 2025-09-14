@@ -1,0 +1,12 @@
+﻿@model GulfCoastWorkforceSolutions.Models.Navigation.MenuViewModel
+
+@if (Model.Items.Any())
+{
+    <h3 class="">@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Navigation.Title")</h3>
+
+    foreach (var menuItem in Model.Items)
+    {
+        <a href="@menuItem.Url">@menuItem.Caption</a>
+        <br />
+    }
+}

@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.NotFound.Title");
+}
+
+<div class="row">
+    <div class="not-found">
+        <div class="col-md-5 col-lg-4 col-lg-offset-1 sm-hidden xs-hidden">
+            <img class="img-responsive" alt="Page not found" src="~/Content/Images/404.jpg">
+        </div>
+        <div class="col-md-7 col-lg-6">
+            <div class="not-found-content">
+                <h2 class="">
+                    @ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.NotFound.Title")
+                </h2>
+                <p>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.NotFound.Message")</p>
+                <p>
+                    @Html.Raw(ResHelper.GetStringFormat("GulfCoastWorkforceSolutionsMvc.NotFound.Instructions", 
+                      Html.HtmlLink(Url.Kentico().PageUrl(ContentItemIdentifiers.HOME), ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.NotFound.Homepage")), 
+                      Html.HtmlLink(Url.Kentico().PageUrl(ContentItemIdentifiers.CONTACTS), ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.NotFound.ContactUs"))))
+                </p>
+                <a href="@Url.Kentico().PageUrl(ContentItemIdentifiers.HOME)" class="btn">
+                    @ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.NotFound.GoHome")
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,16 @@
+﻿@model GulfCoastWorkforceSolutions.Models.Brewers.BrewerFilterViewModel
+
+<h4>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Brewers.Manufacturers")</h4>
+@Html.EditorFor(model => Model.Manufacturers)
+
+<h4>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Brewers.Price")</h4>
+@Html.EditorFor(model => Model.Prices)
+
+<h4>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Brewers.PublicStatus")</h4>
+@Html.EditorFor(model => Model.PublicStatuses)
+
+<h4>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Brewers.Availability")</h4>
+<span class="checkbox js-postback">
+    @Html.CheckBoxFor(model => model.OnlyInStock)
+    @Html.LabelFor(model => model.OnlyInStock, ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Brewers.OnlyInStock"))
+</span>

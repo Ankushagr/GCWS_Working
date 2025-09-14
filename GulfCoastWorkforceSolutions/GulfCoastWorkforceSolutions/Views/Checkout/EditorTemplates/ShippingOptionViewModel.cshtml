@@ -1,0 +1,13 @@
+﻿@model GulfCoastWorkforceSolutions.Models.Checkout.ShippingOptionViewModel
+
+<h4>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Checkout.DeliveryOptions")</h4>
+
+<div class="form-group">
+    @Html.LabelFor(m => m.ShippingOptionID)
+
+    @Html.DropDownListFor(m => m.ShippingOptionID, Model.ShippingOptions, ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Shipping.SelectShipping"))
+
+    <div class="message message-error">
+        @Html.ValidationMessageFor(m => m.ShippingOptionID)
+    </div>
+</div>

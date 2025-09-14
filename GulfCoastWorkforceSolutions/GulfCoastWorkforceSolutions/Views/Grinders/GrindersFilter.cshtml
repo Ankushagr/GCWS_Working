@@ -1,0 +1,10 @@
+﻿@model GulfCoastWorkforceSolutions.Models.Grinders.GrinderFilterViewModel
+
+<h4>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Grinders.Manufacturers")</h4>
+@Html.EditorFor(model => Model.Manufacturers)
+
+<h4>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Grinders.Price")</h4>
+@Html.EditorFor(model => Model.Prices)
+
+<h4>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Grinders.Type")</h4>
+@Html.EditorFor(model => Model.Type)
