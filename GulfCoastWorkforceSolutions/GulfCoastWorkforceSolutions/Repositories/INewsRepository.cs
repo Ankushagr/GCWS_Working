@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GulfCoastWorkforceSolutions.Repositories
 {
-	public interface INewsRepository
+	public interface INewsRepository:IRepository
 	{
 		IEnumerable<News> GetTopNews(int count);
 	}

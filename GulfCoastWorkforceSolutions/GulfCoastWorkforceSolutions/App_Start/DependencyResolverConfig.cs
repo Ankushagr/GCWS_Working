@@ -1,7 +1,4 @@
-﻿using System;
-using System.Configuration;
-using System.Globalization;
-using System.Linq;
+﻿using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Autofac;
@@ -12,9 +9,6 @@ using GulfCoastWorkforceSolutions.Services;
 using Kentico.Content.Web.Mvc;
 using Kentico.Web.Mvc;
 
-//using GulfCoastWorkforceSolutions.Infrastructure;
-//using GulfCoastWorkforceSolutions.Repositories;
-//using GulfCoastWorkforceSolutions.Services;
 
 namespace GulfCoastWorkforceSolutions
 {
@@ -62,14 +56,6 @@ namespace GulfCoastWorkforceSolutions
             builder.RegisterType<ContentItemMetadataProvider>()
                 .AsImplementedInterfaces()
                 .SingleInstance();
-
-            // Register factory for product view models
-            builder.RegisterType<TypedProductViewModelFactory>()
-                .SingleInstance();
-
-            // Register factory for full-text search product view models
-            builder.RegisterType<TypedSearchItemViewModelFactory>()
-                .InstancePerRequest();
 
             //// Enable declaration of output cache dependencies in controllers
             builder.Register(context => new OutputCacheDependencies(context.Resolve<HttpResponseBase>(), context.Resolve<IContentItemMetadataProvider>(), IsCacheEnabled()))

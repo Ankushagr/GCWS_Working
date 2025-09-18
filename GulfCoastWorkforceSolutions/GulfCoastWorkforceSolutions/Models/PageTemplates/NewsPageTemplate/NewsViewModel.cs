@@ -24,7 +24,7 @@ namespace GulfCoastWorkforceSolutions.Models.PageTemplates
         public string Summary { get; set; } 
 
 
-		public IEnumerable<RelatedNewsViewModel> RelatedNews { get; set; }
+		//public IEnumerable<RelatedNewsViewModel> RelatedNews { get; set; }
 
 
         public static NewsViewModel GetViewModel(CMS.DocumentEngine.Types.GCWS.News news, IPageUrlRetriever pageUrlRetriever, IPageAttachmentUrlRetriever attachmentUrlRetriever)

@@ -1,0 +1,296 @@
+//banner
+.main_banner {
+    padding-top: 162px;
+    position: relative;
+    .iframe_wrap {
+        width: 100%;
+    }
+    .carousel {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        .carousel-inner {
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 0px;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 61.5%);
+                z-index: 1;
+            }
+        }
+    }
+    .carousel-item {
+        >img {
+            width: 100%;
+            max-height: calc(100vh - 170px);
+            height: 600px;
+            object-fit: cover;
+        }
+    }
+    iframe,
+    video,
+    .wp-video {
+        width: 100% !important;
+        max-height: calc(100vh - 150px);
+        min-height: 500px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        position: relative;
+        z-index: 9;
+    }
+    .caption_wrap {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel-caption {
+        position: absolute;
+        width: 1200px;
+        top: 10%;
+        z-index: 9;
+        margin: 0 auto;
+        display: table;
+        left: 0;
+        right: 0;
+        text-align: left;
+        h2 {
+            color: #fff;
+            text-shadow: none;
+            margin-bottom: 15px;
+            font-size: 65px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            span {
+                font-size: 36px;
+                font-weight: normal;
+                display: block;
+            }
+        }
+        p {
+            font-size: 20px;
+            color: $primary;
+            max-width: 700px;
+            text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+            font-weight: 500;
+        }
+        .btn_sm {
+            margin-top: 15px;
+        }
+        @include md {
+            text-align: left;
+            h1 {
+                font-size: 36px;
+            }
+        }
+        @media (min-width: 768px) {
+            bottom: 40px;
+            top: auto;
+        }
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 46px;
+        height: 50px;
+        border-radius: 0px 5px 5px 0px;
+        background: rgba(255, 255, 255, 0.50);
+        top: 50%;
+        opacity: 1;
+        transform: translateY(-50%);
+        z-index: 10;
+        &:hover {
+            background: $secondary;
+        }
+    }
+    .carousel-control-next {
+        right: 00px;
+        img {
+            @include rotate;
+        }
+    }
+    .carousel-control-prev {
+        left: 0px;
+    }
+    .carousel-indicators li {
+        width: 15px;
+        height: 15px;
+        border: 0;
+        border-radius: 100px;
+        background: #fff;
+        opacity: 1;
+        &.active {
+            background: $primary;
+        }
+    }
+}
+
+.banner-caption {
+    max-width: 650px;
+    margin-bottom: 30px;
+    h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-variant: all-small-caps;
+    }
+    p {
+        font-size: 21px;
+        color: #fff;
+    }
+}
+
+.btn_main {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 5px;
+    border: 2px solid $secondary;
+    padding: 8px 24px;
+    text-decoration: none;
+    img {
+        margin-left: 8px;
+    }
+    &:hover {
+        background: $secondary;
+        color: #fff;
+        border-color: $secondary;
+        text-decoration: none;
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+.banner-buttons {
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .btn_card {
+        padding: 32px 24px;
+        .btn_icon {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            background: $white;
+            margin-bottom: 16px;
+            margin-right: 16px;
+            @include md {
+                width: 30px;
+                height: 30px;
+                min-width: 30px;
+                min-height: 30px;
+            }
+        }
+        .btn_header {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: $white;
+            font-family: $primary-font;
+        }
+        p {
+            color: $white;
+        }
+        &.red {
+            background: #ab1c21;
+            &:hover {
+                background: #9B1A1F;
+            }
+        }
+        &.green {
+            background: $green;
+            &:hover {
+                background: #496412;
+            }
+        }
+        &.purple {
+            background: $purple;
+            &:hover {
+                background: #603372;
+            }
+        }
+        &.blue {
+            background: #005598;
+            &:hover {
+                background: #014275
+            }
+        }
+    }
+    @include md {
+        .btn_card {
+            padding-left: 16px;
+            padding-right: 16px;
+            .btn_header {
+                flex-direction: column;
+                align-items: start;
+                .btn_icon {
+                    img {
+                        max-width: 22px;
+                    }
+                }
+            }
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main_banner {
+        .carousel-item {
+            >img {
+                height: 400px;
+                object-fit: cover;
+                z-index: 0;
+                min-height: 400px;
+                max-height: 400px;
+            }
+        }
+        iframe,
+        video {
+            height: 400px;
+            object-fit: cover;
+            z-index: 0;
+            min-height: 400px;
+            max-height: 400px;
+        }
+        .carousel-caption {
+            bottom: 40px;
+            top: auto;
+            h2 {
+                font-size: 38px;
+                span {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1199.9px) {
+    .main_banner {
+        padding-top: 100px;
+        flex-direction: column;
+        .carousel-caption {
+            left: 50px;
+            right: 50px;
+            max-width: calc(100% - 100px);
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1200px) {
+    .main_banner .carousel-item>img {
+        min-height: 500px;
+    }
+}

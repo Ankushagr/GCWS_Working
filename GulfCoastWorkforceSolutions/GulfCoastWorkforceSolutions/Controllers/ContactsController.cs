@@ -16,17 +16,17 @@ namespace GulfCoastWorkforceSolutions.Controllers
 {
     public class ContactsController : Controller
     {
-        private readonly ICafeRepository cafeRepository;
+        
         private readonly IContactRepository contactRepository;
         private readonly ICountryRepository countryRepository;
 
 
-        public ContactsController(ICafeRepository cafeRepository,
+        public ContactsController(
             IContactRepository contactRepository, 
             ICountryRepository countryRepository)
         {
             this.countryRepository = countryRepository;
-            this.cafeRepository = cafeRepository;
+           
             this.contactRepository = contactRepository;
         }
 
@@ -41,12 +41,12 @@ namespace GulfCoastWorkforceSolutions.Controllers
 
         private IndexViewModel GetIndexViewModel()
         {
-            var cafes = cafeRepository.GetCompanyCafes(ContentItemIdentifiers.CAFES, 4);
+            
 
             return new IndexViewModel
             {
                 CompanyContact = GetCompanyContactModel(),
-                CompanyCafes = GetCompanyCafesModel(cafes)
+                
             };
         }
 

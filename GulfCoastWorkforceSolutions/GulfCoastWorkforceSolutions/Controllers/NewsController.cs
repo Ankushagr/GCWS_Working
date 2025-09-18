@@ -3,7 +3,6 @@ using CMS.DocumentEngine.Types.GCWS;
 using GulfCoastWorkforceSolutions.Controllers;
 using GulfCoastWorkforceSolutions.Infrastructure;
 using GulfCoastWorkforceSolutions.Models.News;
-using GulfCoastWorkforceSolutions.Repositories;
 using Kentico.Content.Web.Mvc;
 using Kentico.Content.Web.Mvc.Routing;
 using Kentico.PageBuilder.Web.Mvc.PageTemplates;
@@ -18,7 +17,7 @@ namespace GulfCoastWorkforceSolutions.Controllers
     public class NewsController : Controller
     {
         private readonly IPageDataContextRetriever dataContextRetriever;
-        private readonly IArticleRepository articleRepository;
+        
         private readonly IPageUrlRetriever pageUrlRetriever;
         private readonly IPageAttachmentUrlRetriever attachmentUrlRetriever;
         private readonly IOutputCacheDependencies outputCacheDependencies;
@@ -26,14 +25,14 @@ namespace GulfCoastWorkforceSolutions.Controllers
 
 
 		public NewsController(IPageDataContextRetriever dataContextRetriever,
-            IArticleRepository articleRepository,
+            
             IPageUrlRetriever pageUrlRetriever,
             IPageAttachmentUrlRetriever attachmentUrlRetriever,
             IOutputCacheDependencies outputCacheDependencies,
 			IPageRetriever pageRetriever)
         {
             this.dataContextRetriever = dataContextRetriever;
-            this.articleRepository = articleRepository;
+            
             this.pageUrlRetriever = pageUrlRetriever;
             this.attachmentUrlRetriever = attachmentUrlRetriever;
             this.outputCacheDependencies = outputCacheDependencies;
@@ -51,7 +50,7 @@ namespace GulfCoastWorkforceSolutions.Controllers
                query => query
                    .Path(section.NodeAliasPath, PathTypeEnum.Children)
                    .OrderByDescending("DocumentPublishFrom").ToList());
-			//var articles = articleRepository.GetArticles(section.NodeAliasPath);
+			
 
 			outputCacheDependencies.AddDependencyOnPages(news);
 

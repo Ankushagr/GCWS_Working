@@ -11,170 +11,194 @@
     @Html.Kentico().PageDescription()
     @Html.Kentico().PageKeywords()
     @Html.Kentico().PageTitle(ViewBag.Title as string)
-    <link rel="icon" href="~/content/images/favicon.png" type="image/png" />
-    <link href="~/Content/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+    <link href="~/Content/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/css/animate.css" rel="stylesheet">
+    <link href="~/Content/css/custom.css" rel="stylesheet">
+    <link href="~/Content/css/responsive.css" rel="stylesheet">
     <link rel="canonical" href="@Url.Kentico().PageCanonicalUrl()" />
-    @RenderSection("styles", required: false)    
+    @RenderSection("styles", required: false)
 </head>
 <body>
-    <div class="page-wrap">
-        @*@Html.Action("Index", "Consent")*@
-        <header class="header">
-            <div class="menu">
+    
+        <header class="main_header" role="banner">
+            <div class="top_header">
                 <div class="container">
-                    @*@Html.Action("Menu", "Navigation")*@
-                    <div class="menu-separator"></div>
-                    <div class="additional-menu-buttons user-menu">
-                        <div class="dropdown-header menu-hover">
-                            <div class="dropdown-icon-tablet">
-                                <i aria-hidden="true" id="user-menu-icon" class="icon-user"></i>
+                    <div class="top_header_cont">
+                        <div class="top_menu">
+                            <ul class="top_inner_menu">
+                                <li> <a href="#">Calendar </a> </li>
+                                <li> <a href="#"> News</a> </li>
+                                <li> <a href="#">Childcare Financial Assistance </a> </li>
+                            </ul>
+                            <div class="select_language">
+                                <select class="form_control">
+                                    <option>Translate</option>
+                                    <option>English</option>
+                                    <option>Spain</option>
+                                </select>
                             </div>
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                <div class="dropdown-desktop">
-                                    <img src="@Url.Kentico().AvatarUrl(User.Identity.Name, pathToDefaultAvatar: "~/Content/Images/default-avatar.png")" class="dropdown-desktop-avatar" alt="avatar" />
-                                    @ResHelper.GetStringFormat("GulfCoastWorkforceSolutionsMvc.Hello", User.Identity.Name)
-                                    <i aria-hidden="true" class="icon-chevron-down dropdown-arrow"></i>
-                                </div>
-                            }
-                            <span id="user-dropdown-caption-opened" class="sr-only">@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.CloseMenu")</span>
-                            <span id="user-dropdown-caption-closed" class="sr-only">@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.OpenMenu")</span>
+                            <div class="top_search">
+                                <img src="img/search.png" style="max-height: 35px;width: 180px;" alt="">
+                            </div>
                         </div>
-                        <nav role="navigation">
-                            @if (User.Identity.IsAuthenticated)
-                            {
-                                <ul class="dropdown-items-list">
-                                    <li>
-                                        @*@Html.ActionLink(@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.YourAccount"), "YourAccount", "Account")*@
-                                    </li>
-                                    <li>
-                                       
-                                    </li>
-                                </ul>
-                            }
-                            else
-                            {
-                                <ul class="dropdown-items-list dropdown-desktop-visible">
-                                    <li>
-                                        @Html.ActionLink(ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Register"), "Register", "Account")
-                                    </li>
-                                    <li>
-                                        @Html.ActionLink(ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.SignIn"), "Login", "Account")
-                                    </li>
-                                </ul>
-                            }
-                        </nav>
                     </div>
-                    <div class="menu-separator"></div>
-                    @if (Response.StatusCode == (int)HttpStatusCode.OK)
-                    {
-                        <div class="additional-menu-buttons languages">
-                            <div class="dropdown-header menu-hover dropdown-header-mobile">
-                                <div class="dropdown-icon-tablet">
-                                    <i aria-hidden="true" id="language-selection-icon" class="icon-earth"></i>
-                                </div>
-                                <div class="dropdown-desktop dropdown-mobile">
-                                    @ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Culture." + System.Threading.Thread.CurrentThread.CurrentCulture.Name)
-                                    <i aria-hidden="true" id="language-select-btn" class="icon-chevron-down dropdown-arrow">  </i>
-                                </div>
-                                <span id="language-select-caption-opened" class="sr-only">@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.CloseSelector")</span>
-                                <span id="language-select-caption-closed" class="sr-only">@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.OpenSelector")</span>
-                            </div>
-                            <nav role="navigation">
-                                <ul class="dropdown-items-list dropdown-items-list-mobile">
-                                    @*<li>
-                                        @Html.CultureLink(ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Culture.en-us"), "en-US")
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-xl" aria-label="Top Navigation">
+                <div class="container">
+                    <div class="head_wrap">
+                        <div class="logo_wrap">
+                            <a class="navbar-brand" href="#">
+                                <img src="img/logo.svg" alt=" Logo">
+                            </a>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <nav class="nav_bottom" aria-label="Main Navigation">
+                                <ul class="navbar-nav ">
+                                    <li class="nav-item ">
+                                        <a class="nav-link" href="#">Employers</a>
                                     </li>
-                                    <li>
-                                        @Html.CultureLink(ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Culture.es-es"), "es-ES")
-                                    </li>*@
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">Job Seekers</a>
+                                        <ul class="dropdown-menu" aria-label="">
+                                            <li><a href="#">lorem </a> </li>
+                                            <li>
+                                                <a href="#">lorem ipsum</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> Lorem ipsum</a>
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Education</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Regional Economic Data</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">News</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Calendar</a>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
-                    }
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar top"></span>
+                        <span class="icon-bar midlde"></span>
+                        <span class="icon-bar last"></span>
+                    </button>
                 </div>
-            </div>
-            <div class="header-row">
-                <div class="container">
-                    <div class="col-xs-2 md-hidden lg-hidden">
-                        <button type="button" id="mobile-menu-btn">
-                            <i aria-hidden="true" id="mobile-menu-icon" class="icon-menu"></i>
-                            <span id="mobile-menu-caption" class="sr-only">@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.OpenMenu")</span>
-                        </button>
-                    </div>
-                    <div class="col-xs-8 col-md-12 col-lg-4 logo">
-                        <h1 class="logo">
-                            @*@Html.HtmlLink(Url.Kentico().PageUrl(ContentItemIdentifiers.HOME), "Dancing Goat", new { @class = "logo-link" })*@
-                        </h1>
-
-                    </div>
-                    <div class="col-xs-2 md-hidden lg-hidden cart-preview-mini">
-                        <a href="@Url.Action("ShoppingCart", "Checkout")" class="shopping-cart">
-                            <i aria-hidden="true" class="icon-shopping-cart"></i>
-                            <span class="sr-only">@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.ShoppingCart")</span>
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-md-7 col-lg-4">
-                        @*@using (Html.BeginForm("Index", "Search", FormMethod.Get, new { @Id = "searchForm", @Class = "searchBox" }))
-                        {
-                            <input type="text" id="searchtext" name="searchtext" placeholder="@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Search")" maxlength="1000" class="search-box-watermark" autocomplete="off">
-                            <input type="submit" value="" class="search-box-btn">
-                        }*@
-                    </div>
-                    <div class="col-md-5 col-lg-4 xs-hidden sm-hidden">
-                        <div class="shopping-cart-mini-preview">
-                            @*<a href="@Url.Action("ShoppingCart", "Checkout")">
-                                <div class="shopping-cart-mini-preview-label">
-                                    @ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.YourCart")
-                                </div>
-                            </a>*@
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </nav>
         </header>
-        <div class="container">
+        <main id="page_content">
             @RenderBody()
-        </div>
-    </div>
-    <div class="footer-wrapper">
-        <footer>
-            <div class="footer-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-3 footer-col">
-                            <h3 class="contact-title">@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.Contact.Title")</h3>
-                            <p>
-                                @*@Html.Action("CompanyAddress", "Company")*@
-                            </p>
+        </main>
+        <footer class="footer ">
+            <div class="container">
+                <div class="row footer_row align-items-start">
+                    <div class="col-md-4  foot_col ">
+                        <div class="footer-logo">
+                            <a href="#">
+                                <img src="img/footer-logo.svg" alt="GCWS Logo" height="">
+                            </a>
                         </div>
-                        <div class="col-md-4 col-lg-6 footer-col">
-                            <div class="col-md-12 col-lg-6 footer-zone-follow-us">
-                                <h3>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.FollowUs.Title")</h3>
-                                @*@Html.Action("CompanySocialLinks", "Company")*@
-                            </div>
-
-                            <div class="col-md-12 col-lg-6">
-                                @*@Html.Action("Footer", "Navigation")*@
+                        <ul class="footer-social d-flex list-unstyled mb-0">
+                            <li>
+                                <a href="#" class="footer-social-icon"><img src="img/facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-social-icon"><img src="img/TwitterX.svg" alt="Twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-social-icon"><img src="img/instagram.svg" alt="Instagram"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-social-icon"><img src="img/youtube.svg" alt="YouTube"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer-social-icon"><img src="img/Linked.svg" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 foot_col ">
+                        <h2 class="">Contact Us</h2>
+                        <div class="footer-contact">
+                            <span class="footer-icon mr-2"><img src="img/call.svg" alt="Phone"></span>
+                            <div class="con_info">
+                                <strong>Phone:</strong>
+                                <p>
+                                    <a href="#">713-627-3200</a>
+                                </p>
                             </div>
                         </div>
-                        @*<div class="col-md-4 col-lg-3 footer-col">
-                            <h3>@ResHelper.GetString("GulfCoastWorkforceSolutionsMvc.News.Title")</h3>
-                            @Html.Kentico().RenderStandaloneWidget(GulfCoastWorkforceSolutions.Controllers.Widgets.NewsletterSubscriptionWidgetController.IDENTIFIER, new NewsletterSubscriptionProperties())
-                        </div>*@
+                        <div class="footer-contact">
+                            <span class="footer-icon mr-2"><img src="img/location_on.svg" alt="location"></span>
+                            <div class="con_info">
+                                <strong>Office: </strong>
+                                <p>
+                                    <a href="#">3555 Timmons Lane, Houston, TX 77027.</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-contact">
+                            <span class="footer-icon mr-2"><img src="img/drafts.svg" alt="drafts"></span>
+                            <div class="con_info">
+                                <strong>Mailing Address: </strong>
+                                <p>
+                                    Workforce Solutions <br>Houston-Galveston Area Council <br>P.O. Box 22777 Houston, TX 77227-2777
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 foot_col">
+                        <h2>Explore</h2>
+                        <ul class="footer-links list-unstyled mb-0">
+                            <li><a href="#" class="">Contact Us</a></li>
+                            <li><a href="#" class="">Partner With Us</a></li>
+                            <li><a href="#" class="">How to Become a Vendor</a></li>
+                            <li><a href="#" class="">How to Become a Partner</a></li>
+                            <li><a href="#" class="">Request Letters of Support for External Grants</a></li>
+                            <li><a href="#" class="">Copyright & Legal</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="container copyright">
-                Copyright &copy; @DateTime.Now.Year Dancing Goat. All rights reserved.
+                <hr class="footer-divider" style="border-color: rgba(255,255,255,0.6);">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <small class="footer-copyright text-white">
+                            ©www.wrksolutions.com. All Rights Reserved<br>
+                            Workforce Solutions is an Equal Opportunity Employer/Program. Auxiliary Aids and Services are available upon request to individuals with disabilities. (Please request reasonable accommodations a minimum of two business days in advance.) Relay Texas: 1-800-735-2989 (TDD) and 1-800-735-2988 (Voice) or 711
+                        </small>
+                    </div>
+                </div>
             </div>
         </footer>
-    </div>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/jquery-unobtrusive-ajax")
-    @Scripts.Render("~/bundles/jquery-validation")
-    @Scripts.Render("~/Scripts/responsiveMenuDropdown.js")
-    @Scripts.Render("~/Scripts/mobileMenu.js")
-    @RenderSection("scripts", required: false)
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/jquery-unobtrusive-ajax")
+            @Scripts.Render("~/bundles/jquery-validation")
+            @Scripts.Render("~/Scripts/responsiveMenuDropdown.js")
+            @Scripts.Render("~/Scripts/mobileMenu.js")
+            <script src="~/Content/js/jquery.js "></script>
+            <script src="~/Content/js/popper.js "></script>
+            <script src="~/Content/js/bootstrap.js "></script>
+            <script src="~/Content/js/expand.js "></script>
+            <script src="~/Content/js/owl.carousel.min.js "></script>
+            <script src="~/Content/js/custom.js "></script>
+            @RenderSection("scripts", required: false)
 </body>
 </html>

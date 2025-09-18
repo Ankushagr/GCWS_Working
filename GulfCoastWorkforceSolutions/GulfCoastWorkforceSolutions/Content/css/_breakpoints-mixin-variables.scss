@@ -1,0 +1,186 @@
+$breakpoints:( "xs":0, "sm":480px, "md":768px, "lg":992px, "xl":1200px, );
+@mixin xl {
+    @media( min-width: map-get($breakpoints, 'xl')) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media( min-width: map-get($breakpoints, 'xl')) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media( max-width: map-get($breakpoints, 'md')) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media( max-width: map-get($breakpoints, 'lg')) {
+        @content;
+    }
+}
+
+@mixin desk {
+    @media( min-width: map-get($breakpoints, 'lg')) {
+        @content;
+    }
+}
+
+@mixin desklg {
+    @media( min-width: map-get($breakpoints, 'xl')) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (min-width: 768px) and (max-width: map-get($breakpoints, "lg") - 1) {
+        @content;
+    }
+}
+
+@mixin max-lg {
+    @media (max-width: 1199.9px) {
+        @content;
+    }
+}
+
+//ini custom breakpoints
+@mixin breakpoint($bp:0) {
+    @media (min-width: $bp) {
+        @content;
+    }
+}
+
+//Mixins
+@mixin all {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin primary-font {
+    font-family: 'Inter', sans-serif;
+}
+
+@mixin secondary-font {
+    font-family: 'DM Sans', sans-serif;
+}
+
+@mixin upper {
+    text-transform: uppercase;
+}
+
+@mixin regular {
+    font-weight: 400;
+}
+
+@mixin medium {
+    font-weight: 500;
+}
+
+@mixin semi {
+    font-weight: 600;
+}
+
+@mixin bold {
+    font-weight: 700;
+}
+
+@mixin dflex {
+    display: flex;
+}
+
+@mixin underline {
+    text-decoration: underline;
+}
+
+@mixin dfw {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin img-white {
+    filter: brightness(0) invert(1);
+}
+
+@mixin rotate {
+    transform: rotate(180deg);
+}
+
+@mixin img-green {
+    filter: brightness(0) saturate(100%) invert(51%) sepia(78%) saturate(5573%) hue-rotate(149deg) brightness(94%) contrast(99%);
+}
+
+@mixin img-black {
+    filter: brightness(0) saturate(100%) invert(1%) sepia(77%) saturate(1660%) hue-rotate(166deg) brightness(90%) contrast(102%);
+}
+
+@mixin img-blue {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(12%) saturate(4774%) hue-rotate(193deg) brightness(95%) contrast(96%);
+}
+
+//Variables
+$primary:#08164E;
+$secondary:#D8790D;
+$orange:#D8790D;
+$yellow:#ECAF3B;
+$border-color:#D8612E;
+$darkblue:#193369;
+$lightblue:#F0F5FB;
+$red:#D60004;
+$red-hover:#C50105;
+$green:#5B7E15;
+$blue:#004B8F;
+$purple:#7A4090;
+$bg-blue:#14213f;
+$black:#000;
+$white:#ffffff;
+$gray:#555554;
+$lightgray:#F5F5F5;
+$primary-font: 'Inter',
+sans-serif;
+$secondary-font:'DM Sans',
+sans-serif;
+$shadow:0px 1px 3px 0px rgba(0, 0, 0, 0.15);
+// color paltte - 
+$colors:( "primary":$primary, "secondary":$secondary, "green":#008943, "black":#000, "lightgray":#F5F5F5);
+.test-btn {
+    background-color: map-get($colors, "blue");
+}
+
+@mixin fancy-border($size:1px, $color:#000) {
+    border: $size solid $color;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
