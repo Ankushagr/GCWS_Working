@@ -1,0 +1,83 @@
+﻿using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Autofac;
+using Autofac.Integration.Mvc;
+using GCWS.Infrastructure;
+using GCWS.Repositories;
+using GCWS.Services;
+using Kentico.Content.Web.Mvc;
+using Kentico.Web.Mvc;
+
+
+namespace GCWS
+{
+    /// <summary>
+    /// Registers required implementations to the Autofac container and set the container as ASP.NET MVC dependency resolver
+    /// </summary>
+    public static class DependencyResolverConfig
+    {
+        public static void Register()
+        {
+            var builder = new ContainerBuilder();
+
+            ConfigureDependencyResolverForMvcApplication(builder);
+
+            AttachCMSDependencyResolver(builder);
+
+            DependencyResolver.SetResolver(new AutofacDependencyResolver(builder.Build()));
+        }
+
+
+        private static void ConfigureDependencyResolverForMvcApplication(ContainerBuilder builder)
+        {
+            // Enable property injection in view pages
+            builder.RegisterSource(new ViewRegistrationSource());
+
+            // Register web abstraction classes
+            builder.RegisterModule<AutofacWebTypesModule>();
+
+            // Register controllers
+            builder.RegisterControllers(typeof(MvcApplication).Assembly);
+
+            //Register repositories
+            builder.RegisterAssemblyTypes(typeof(MvcApplication).Assembly)
+                .Where(x => x.IsClass && !x.IsAbstract && typeof(IRepository).IsAssignableFrom(x))
+                .AsImplementedInterfaces()
+                .InstancePerRequest();
+
+            // Register services
+            builder.RegisterAssemblyTypes(typeof(MvcApplication).Assembly)
+                .Where(x => x.IsClass && !x.IsAbstract && typeof(IService).IsAssignableFrom(x))
+                .AsImplementedInterfaces()
+                .InstancePerRequest();
+
+            // Register providers of additional information about content items
+            builder.RegisterType<ContentItemMetadataProvider>()
+                .AsImplementedInterfaces()
+                .SingleInstance();
+
+            //// Enable declaration of output cache dependencies in controllers
+            builder.Register(context => new OutputCacheDependencies(context.Resolve<HttpResponseBase>(), context.Resolve<IContentItemMetadataProvider>(), IsCacheEnabled()))
+                .AsImplementedInterfaces()
+                .InstancePerRequest();
+        }
+
+
+        /// <summary>
+        /// Configures Autofac container to use CMS dependency resolver in case it cannot resolve a dependency.
+        /// </summary>
+        private static void AttachCMSDependencyResolver(ContainerBuilder builder)
+        {
+            builder.RegisterSource(new CMSRegistrationSource());
+        }
+        private static bool IsCacheEnabled()
+        {
+            return !IsPreviewEnabled();
+        }
+        private static bool IsPreviewEnabled()
+        {
+            return HttpContext.Current.Kentico().Preview().Enabled;
+        }
+    }
+}

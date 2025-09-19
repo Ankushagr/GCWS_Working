@@ -21,9 +21,7 @@
 
     /*@ngInject*/
     function controller(scoringService) {
-        this.$onInit = function () {
-            activate.apply(this);
-        };
+        activate.apply(this);
 
         function activate() {
             scoringService.getScorings(this.contactId)

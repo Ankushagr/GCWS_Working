@@ -1,0 +1,45 @@
+﻿
+@model GCWS.Models.NewsViewModel
+
+<div class="main_wrapper" role="main" id="page_content">
+    <div class="main_breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#"> <img src="img/home.svg" alt=" Home"> Home</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">page title </a></li>
+                    <li class="breadcrumb-item"><a href="#">page title </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">page title</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="page_title">
+        <h1>@Model.Title</h1>
+        <span class="date">@Model.ReleaseDate.ToString("MMMM dd, yyyy")</span>
+    </div>
+    <div class="news_detail ">
+        <div class="container ">
+            <div class="news-dt-content ">
+                <div class="news-dt-img ">
+                    <img src="@Model.TeaserUrl.RelativePath" alt="@Model.Title" title="@Model.Title" alt="News Image">
+                </div>
+                @Html.Raw(Model.Description)
+                <div class="share_news">
+                    <p>
+                        <img src="~/content/img/share-news.png " style="max-width: 200px; "> this is share plugin
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section styles {
+    @Html.Kentico().PageBuilderStyles()
+}
+
+@section scripts {
+    @Html.Kentico().PageBuilderScripts()
+}

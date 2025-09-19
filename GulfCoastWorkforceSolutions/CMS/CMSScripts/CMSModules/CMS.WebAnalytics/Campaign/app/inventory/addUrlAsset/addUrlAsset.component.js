@@ -35,11 +35,7 @@
                     urlAssetTargetRegex: function () { return ctrl.urlAssetTargetRegex; }
                 }
             })
-                .result
-                .then(onConfirm)
-                .catch(function () {
-                    // Do nothing on dismiss, but this prevents unhandled rejection.
-                });
+                .result.then(onConfirm);
         };
 
         function onConfirm(item) {

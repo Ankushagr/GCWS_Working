@@ -234,6 +234,9 @@
   <data name="pagetemplatesmvc.requesterror" xml:space="preserve">
     <value>An error occurred while attempting to retrieve page templates. Contact your system administrator and check that the page builder feature is registered correctly in the MVC project.</value>
   </data>
+  <data name="pagetemplatesmvc.networkerror" xml:space="preserve">
+    <value>An error occurred while attempting to retrieve page templates. The live site application is not running or is not accessible.</value>
+  </data>
   <data name="pagetemplatesmvc.selector.cannotretrievetemplates" xml:space="preserve">
     <value>Page template selector cannot retrieve available page templates.</value>
   </data>
@@ -14892,7 +14895,7 @@ To confirm the subscription, use the link in the email that was sent to you or v
     <value>You are currently using a Kentico Xperience Free Edition license. Want to get even more from your website? &lt;a href="https://xperience.io/pricing" title="See the benefits of upgrading your license" target="_blank"&gt;See the benefits of upgrading your license.&lt;/a&gt;</value>
   </data>
   <data name="header.ecommercefeatureexceeded" xml:space="preserve">
-    <value>&lt;strong&gt;Warning&lt;/strong&gt;: Your website currently contains &lt;strong&gt;{0}&lt;/strong&gt; enabled products (SKUs), but your website's license has a maximum limit of &lt;strong&gt;{1}&lt;/strong&gt;.&lt;br /&gt;&lt;br /&gt; &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Upgrade your license.&lt;/strong&gt; Visit our &lt;a href="https://xperience.io/pricing" target="blank"&gt;website&lt;/a&gt; or contact us at &lt;a href="mailto:sales@xperience.io" target="_blank"&gt;sales@xperience.io&lt;/a&gt;.&lt;/li&gt; &lt;li&gt;Alternatively, reduce the number of enabled products or product variants in the Products application. Disable the 'Allow for sale' property of products or delete them entirely.&lt;/li&gt;</value>
+    <value>&lt;strong&gt;Warning&lt;/strong&gt;: Your website currently contains &lt;strong&gt;{0}&lt;/strong&gt; enabled products (SKUs), but your website's license has a maximum limit of &lt;strong&gt;{1}&lt;/strong&gt;.&lt;br /&gt;&lt;br /&gt; &lt;ul&gt;&lt;li&gt;&lt;strong&gt;Upgrade your license.&lt;/strong&gt; Visit our &lt;a href="https://xperience.io/pricing" target="blank"&gt;website&lt;/a&gt; or contact us at &lt;a href="mailto:sales@kentico.com" target="_blank"&gt;sales@kentico.com&lt;/a&gt;.&lt;/li&gt; &lt;li&gt;Alternatively, reduce the number of enabled products or product variants in the Products application. Disable the 'Allow for sale' property of products or delete them entirely.&lt;/li&gt;</value>
   </data>
   <data name="header.licenses" xml:space="preserve">
     <value>License keys</value>
@@ -54793,16 +54796,16 @@ http://www.mysite.com/styles/stylesheet.css</value>
     <value>&lt;a href = {0}&gt;{1}&lt;/a&gt; of your subscription license keys have expired. Renew your subscription within the next {2} day(s) to keep your website and administration interface accessible.</value>
   </data>
   <data name="subscriptionlicenses.error.single" xml:space="preserve">
-    <value>Your subscription license key has expired. Get in touch with &lt;a href="mailto:sales@xperience.io"&gt;sales@xperience.io&lt;/a&gt; to renew your subscription within the next {0} day(s) to keep your website and administration interface accessible.</value>
+    <value>Your subscription license key has expired. Get in touch with &lt;a href="mailto:sales@kentico.com"&gt;sales@kentico.com&lt;/a&gt; to renew your subscription within the next {0} day(s) to keep your website and administration interface accessible.</value>
   </data>
   <data name="subscriptionlicenses.error.graceperiodexpired" xml:space="preserve">
-    <value>Your subscription license key has expired. Get in touch with &lt;a href="mailto:sales@xperience.io"&gt;sales@xperience.io&lt;/a&gt; to renew your subscription.</value>
+    <value>Your subscription license key has expired. Get in touch with &lt;a href="mailto:sales@kentico.com"&gt;sales@kentico.com&lt;/a&gt; to renew your subscription.</value>
   </data>
   <data name="subscriptionlicenses.warning.multiple" xml:space="preserve">
-    <value>&lt;a href = {0}&gt;{1}&lt;/a&gt; of your subscription license keys are about to expire. Please get in touch with &lt;a href="mailto:sales@xperience.io"&gt;sales@xperience.io&lt;/a&gt; to renew your subscription.</value>
+    <value>&lt;a href = {0}&gt;{1}&lt;/a&gt; of your subscription license keys are about to expire. Please get in touch with &lt;a href="mailto:sales@kentico.com"&gt;sales@kentico.com&lt;/a&gt; to renew your subscription.</value>
   </data>
   <data name="subscriptionlicenses.warning.single" xml:space="preserve">
-    <value>Your subscription license key expires in {0} day(s). Please get in touch with &lt;a href="mailto:sales@xperience.io"&gt;sales@xperience.io&lt;/a&gt; to renew your subscription.</value>
+    <value>Your subscription license key expires in {0} day(s). Please get in touch with &lt;a href="mailto:sales@kentico.com"&gt;sales@kentico.com&lt;/a&gt; to renew your subscription.</value>
   </data>
   <data name="generalproperties.liveurl" xml:space="preserve">
     <value>Live URL:</value>

@@ -1,0 +1,23 @@
+﻿@model GCWS.Models.Widgets.CarouselWidgetViewModel
+
+
+    @if (Model.carouselItems.Count > 0)
+    {
+        var index = 0;
+        foreach (var items in Model.carouselItems)
+        {
+            var activeClass = index == 0 ? "active" : "";
+            <div class="carousel-item @activeClass">
+                <img src="@items.Banner" alt="@items.Title">
+                <div class="caption_wrap">
+                    <div class="carousel-caption">
+                        <h2> @Html.Raw(items.BannerText)</h2>
+                        <a href="@items.CtaUrl" class="btn_main">@items.CtaLable <img src="~/content/img/arrow_forward.svg" alt="Arrow Icon"> </a>
+                    </div>
+                </div>
+            </div>
+            index++;
+        }
+    }
+
+

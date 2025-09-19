@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.uielement>
+  <ElementAccessCondition>
+    <![CDATA[{%Rule("(CurrentUser.CheckPrivilegeLevel(UserPrivilegeLevelEnum.GlobalAdmin))", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"CurrentUserHasPrivilegeLevel\" ><p n=\"_has\"><t>has</t><v></v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p><p n=\"privilege\"><t>GlobalAdmin</t><v>GlobalAdmin</v><r>0</r><d>select level</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)156742a242fed5af8ffbfe2eafb890d2261f6c794fef5f170f05211a27be7294%}]]>
+  </ElementAccessCondition>
+  <ElementCaption>{$workflow.action.title$}</ElementCaption>
+  <ElementCheckModuleReadPermission>True</ElementCheckModuleReadPermission>
+  <ElementDisplayName>{$workflow.action.title$}</ElementDisplayName>
+  <ElementFromVersion>8.0</ElementFromVersion>
+  <ElementGUID>929592cb-8d87-41ac-983a-e5b98ca968e2</ElementGUID>
+  <ElementIconClass />
+  <ElementIsCustom>False</ElementIsCustom>
+  <ElementIsGlobalApplication>False</ElementIsGlobalApplication>
+  <ElementIsMenu>False</ElementIsMenu>
+  <ElementName>ActionList</ElementName>
+  <ElementOrder>3</ElementOrder>
+  <ElementPageTemplateID>
+    <CodeName>Listing</CodeName>
+    <GUID>226b13a3-97c2-4895-99e4-39ea6247a399</GUID>
+    <ObjectType>cms.pagetemplate</ObjectType>
+  </ElementPageTemplateID>
+  <ElementParentID>
+    <CodeName>ProcessesAndActions</CodeName>
+    <GUID>1bfe964c-e4b6-4d87-9f86-d8279019f53a</GUID>
+    <ObjectType>cms.uielement</ObjectType>
+    <Parent>
+      <CodeName>CMS.OnlineMarketing</CodeName>
+      <GUID>bd03e629-e677-42a6-8b12-5277fa04add7</GUID>
+      <ObjectType>cms.resource</ObjectType>
+    </Parent>
+  </ElementParentID>
+  <ElementProperties>
+    <Data>
+      <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
+      <EditActionURL ismacro="True">
+        <![CDATA[{% UIContext.GetElementUrl("CMS.OnlineMarketing", "ActionProperties", false, EditedObject.ID, "&objectid={0}") |(identity)GlobalAdministrator|(hash)c3f44b9089a0eef0b839d7c6e3d574fe4c9fc1fd4f8734d20f31bd4968be4d72%}]]>
+      </EditActionURL>
+      <EditInDialog>False</EditInDialog>
+      <ExtenderClassName>
+        <![CDATA[CMS.WorkflowEngine.Web.UI.AutomationProcessActionListExtender]]>
+      </ExtenderClassName>
+      <GridExtender>CMS.WorkflowEngine.Web.UI</GridExtender>
+      <GridName>
+        <![CDATA[~/App_Data/CMSModules/OnlineMarketing/UI/Grids/CMS_WorkflowAction/automationaction.xml]]>
+      </GridName>
+      <ObjectType>ma.automationaction</ObjectType>
+      <OpenInDialog>False</OpenInDialog>
+    </Data>
+  </ElementProperties>
+  <ElementRequiresGlobalAdminPriviligeLevel>False</ElementRequiresGlobalAdminPriviligeLevel>
+  <ElementResourceID>
+    <CodeName>CMS.OnlineMarketing</CodeName>
+    <GUID>bd03e629-e677-42a6-8b12-5277fa04add7</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ElementResourceID>
+  <ElementSize>0</ElementSize>
+  <ElementType>PageTemplate</ElementType>
+  <ElementVisibilityCondition>
+    <![CDATA[{%Rule("CurrentUser.CheckPrivilegeLevel(UserPrivilegeLevelEnum.GlobalAdmin)", "<rules><r pos=\"0\" par=\"\" op=\"and\" n=\"CurrentUserHasPrivilegeLevel\" ><p n=\"_has\"><t>has</t><v></v><r>0</r><d>select operation</d><vt>text</vt><tv>0</tv></p><p n=\"privilege\"><t>GlobalAdmin</t><v>GlobalAdmin</v><r>0</r><d>select level</d><vt>text</vt><tv>1</tv></p></r></rules>")|(identity)GlobalAdministrator|(hash)be319c71196c8e2c98715869703d68fa1440d1cbe1479ee7cf86c059cc9ab132%}]]>
+  </ElementVisibilityCondition>
+</cms.uielement>

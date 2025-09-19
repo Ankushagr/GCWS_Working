@@ -29,10 +29,7 @@
         ctrl.openDialog = function () {
             if (confirmationService.canEditObjective()) {
                 objectiveSetupDialogService.openDialog(ctrl.objectiveConversions, ctrl.objective, 'campaign.objective.defineobjective')
-                    .then(updateObjective)
-                    .catch(function () {
-                        // Do nothing on dismiss, but this prevents unhandled rejection.
-                    });
+                    .then(updateObjective);
             }
         };
 

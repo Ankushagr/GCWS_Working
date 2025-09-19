@@ -23,9 +23,7 @@
             $dialogHeader = $cmsj("#dialog-header", context),
             $dialogContent = $dialogHeader.closest('.ui-dialog-content', context);
 
-        this.$onInit = function () {
-            initDialog();
-        };
+        initDialog();
 
         ctrl.maximize = function () {
             ctrl.originalHeight = $dialogContent.height();

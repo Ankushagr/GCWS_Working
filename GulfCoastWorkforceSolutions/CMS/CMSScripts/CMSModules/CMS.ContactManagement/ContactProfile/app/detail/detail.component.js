@@ -25,10 +25,6 @@
 
     /*@ngInject*/
     function controller(detailService) {
-        this.$onInit = function () {
-            activate.apply(this);
-        };
-
         function activate() {
             detailService.getDetail(this.contactId)
                 .then(onSuccess.bind(this));
@@ -37,5 +33,7 @@
         function onSuccess(fields) {
             this.fields = fields;
         };
+
+        activate.apply(this);
     };
 }(angular));

@@ -19,9 +19,7 @@
     function controller() {
         var ctrl = this;
 
-        this.$onInit = function () {
-            ctrl.activeTab = this.selectedIndex || 0;
-        };
+        ctrl.activeTab = this.selectedIndex || 0;
 
         ctrl.changeTab = function (index) {
             ctrl.activeTab = index;

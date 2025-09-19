@@ -1,0 +1,270 @@
+﻿@model IEnumerable<GCWS.Models.NewsViewModel>
+@{
+    var i = 1;
+}
+<div class="main_wrapper" role="main" id="page_content" style="">
+    <div class="main_breadcrumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="#"> <img src="img/home.svg" alt=" Home"> Home</a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#">page title </a></li>
+                    <li class="breadcrumb-item"><a href="#">page title </a></li>
+                    <li class="breadcrumb-item active" aria-current="page">page title</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <div class="page_title text-center ">
+        <h1>Blog Force</h1>
+    </div>
+    <div class="news_wraper">
+        <div class="newsArea ">
+            <div class="container">
+                <div class="newsRow row">
+                    @foreach (var news in @Model)
+                    {
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="@news.Url">
+                                    <div class="newsimg ">
+                                        <img src="@news.TeaserUrl.WithSizeConstraint(SizeConstraint.Height(200)).RelativePath" alt="@news.Title" title="@news.Title" alt="News Article Image">
+                                    </div>
+                                    <div class="news_category">
+                                        @news.Category
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                @news.Title
+                                            </h3>
+                                            <span class="date">@news.ReleaseDate.ToString("m")</span>
+                                            <p>
+                                                @news.Summary
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        if (i % 4 == 0)
+                        {
+                            <div class="clear"></div>
+                        }
+                        i++;
+                    }
+                </div>
+            </div>
+        </div>
+        @*<div class="newsSearchEra">
+                <div class="container">
+                    <div class="row newsInRow ">
+                        <div class="col-md-9 nsleft">
+                            <div class="search_filter_title">
+                                <div class="search-box">
+                                    <div class="search_input">
+                                        <form role="search" method="get" id="news-search-form">
+                                            <label for="news-search-input" class="title">Search</label>
+                                            <div class="input-group">
+                                                <input type="text" id="news-search-input" class="form-control" placeholder="Search" name="s" aria-label="Search news">
+                                                <button class="btn btn-default" id="news-search-btn" type="submit" aria-label="Submit search">
+                                                    <img src="img/search-icon.svg" alt="search icon">
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="filterwrap ">
+                                    <form aria-label="Filter news">
+                                        <div class="filter_box col-one" id="filter-category-box">
+                                            <label class="title" for="filter-category">Filters</label>
+                                            <select id="filter-category" class="form-control" aria-label="Filter by category">
+                                                <option>Category</option>
+                                                <option class="">All</option>
+                                                <option class="">1</option>
+                                                <option class="">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter_box col-two" id="filter-month-box">
+                                            <label class="title visually-hidden" for="filter-month">Month</label>
+                                            <select id="filter-month" class="form-control" aria-label="Filter by month">
+                                                <option>Month</option>
+                                                <option class="">All</option>
+                                                <option class="">1</option>
+                                                <option class="">2</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter_box col-three" id="filter-year-box">
+                                            <label class="title visually-hidden" for="filter-year">Year</label>
+                                            <select id="filter-year" class="form-control" aria-label="Filter by year">
+                                                <option>Year</option>
+                                                <option class="">All</option>
+                                                <option class="">1</option>
+                                                <option class="">2</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 nsRight">
+                            <div class="newsSort">
+                                <label class="title" for="sort-news">Sort</label>
+                                <select id="sort-news" class="form-control" aria-label="Sort news">
+                                    <option>Most Recent First</option>
+                                    <option class="">All</option>
+                                    <option class="">1</option>
+                                    <option class="">2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsRow row">
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category">
+                                        Category
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            <span class="date">Jun 01, 2024</span>
+                                            <p>
+                                                Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category">
+                                        Category
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            <span class="date">Jun 01, 2024</span>
+                                            <p>
+                                                Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category">
+                                        Category
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            <span class="date">Jun 01, 2024</span>
+                                            <p>
+                                                Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category">
+                                        Category
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            <span class="date">Jun 01, 2024</span>
+                                            <p>
+                                                Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category">
+                                        Category
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            <span class="date">Jun 01, 2024</span>
+                                            <p>
+                                                Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="newsColumn ">
+                            <div class="news_content">
+                                <a href="#">
+                                    <div class="newsimg ">
+                                        <img src="img/news-card.png " alt="News Article Image">
+                                    </div>
+                                    <div class="news_category">
+                                        Category
+                                    </div>
+                                    <div class="newsinfo">
+                                        <div class="newsBody">
+                                            <h3>
+                                                Title of News Item
+                                            </h3>
+                                            <span class="date">Jun 01, 2024</span>
+                                            <p>
+                                                Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus. Nullam interdum, enim aliquam lacinia interdum, ipsum risus.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination" role="navigation" aria-label="Pagination">
+                        <img src="img/pagination.png" alt="Pagination navigation graphic">
+                    </div>
+                </div>
+            </div>*@
+    </div>
+</div>

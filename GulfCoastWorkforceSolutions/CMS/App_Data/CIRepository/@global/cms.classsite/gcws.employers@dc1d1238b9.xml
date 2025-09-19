@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.classsite>
+  <Parent>
+    <CodeName>GCWS.Employers</CodeName>
+    <GUID>48b27d50-eb51-4185-92b9-bfd9ee4977a6</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="gcws">
+      <SiteID>
+        <CodeName>gcws</CodeName>
+        <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+        <ObjectType>cms.site</ObjectType>
+      </SiteID>
+    </Binding>
+  </Bindings>
+</cms.classsite>

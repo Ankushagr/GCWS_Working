@@ -128,9 +128,8 @@
             $(templatesDiv).removeClass("hidden");
 
             var result = "";
-            var compiledTemplate = _.template(template);
             pageTemplates.forEach(function (item) {
-                var html = compiledTemplate({
+                var html = _.template(template, {
                     identifier: item.identifier,
                     thumbnail: getThumbnail(item),
                     name: item.name,

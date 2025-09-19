@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<media.library>
+  <LibraryAccess>4444444</LibraryAccess>
+  <LibraryDisplayName>GCWS</LibraryDisplayName>
+  <LibraryFolder>GCWS</LibraryFolder>
+  <LibraryGUID>e0049cbc-380e-4ebd-a3fb-71cef0b22ba2</LibraryGUID>
+  <LibraryName>GCWS</LibraryName>
+  <LibrarySiteID>
+    <CodeName>gcws</CodeName>
+    <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </LibrarySiteID>
+  <LibraryUseDirectPathForContent>False</LibraryUseDirectPathForContent>
+</media.library>

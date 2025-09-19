@@ -25,10 +25,7 @@
     /*@ngInject*/
     function controller(submittedFormsService) {
         var self = this;
-
-        this.$onInit = function () {
-            activate.apply(this);
-        };
+        activate();
 
         self.sortTypeName = 'FormDisplayName';
         self.sortTypeSite = 'SiteDisplayName';

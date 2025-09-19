@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>GCWS</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>News Section</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2" />
+  </ClassFormDefinition>
+  <ClassFormLayout />
+  <ClassGUID>101c89e6-7e5c-402f-9974-6a56c3b20e66</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>True</ClassHasURL>
+  <ClassIconClass>icon-folder-o</ClassIconClass>
+  <ClassIsCoupledClass>False</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsNavigationItem>True</ClassIsNavigationItem>
+  <ClassName>GCWS.NewsSection</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchCreationDateColumn>DocumentCreatedWhen</ClassSearchCreationDateColumn>
+  <ClassSearchEnabled>True</ClassSearchEnabled>
+  <ClassSearchIndexDataSource>0</ClassSearchIndexDataSource>
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassSearchTitleColumn>DocumentName</ClassSearchTitleColumn>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>

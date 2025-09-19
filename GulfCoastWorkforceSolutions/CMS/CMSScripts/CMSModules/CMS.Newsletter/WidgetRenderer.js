@@ -49,15 +49,13 @@ cmsdefine(['jQuery', 'Underscore', 'CMS/ClientLocalization'], function ($, _, lo
      * @returns {string} widget html code
      */
     function renderWidget(widget, includeControls) {
-        var compiledTemplate = _.template(WIDGET_TEMPLATE);
-
-        return compiledTemplate({
+        return _.template(WIDGET_TEMPLATE, {
             widgetId: widget.identifier,
             widgetContent: widget.html,
             widgetHasUnfilledRequiredProperty: widget.hasUnfilledRequiredProperty,
             widgetDefinitionNotFound: widget.widgetDefinitionNotFound,
             includeControls: includeControls,
-            tooltipText: localization.getString("emailbuilder.error.unfilledrequiredproperties.tooltip")
+            tooltipText : localization.getString("emailbuilder.error.unfilledrequiredproperties.tooltip")
         });
     }
 

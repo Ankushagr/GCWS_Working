@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- This is a CI serialization file for /News -->
+<cms.node>
+  <NodeACLID>
+    <GUID>0072d163-58b7-495f-bbcd-1f15eaadf7e3</GUID>
+    <ObjectType>cms.acl</ObjectType>
+    <Site>
+      <CodeName>gcws</CodeName>
+      <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </NodeACLID>
+  <NodeAlias>News</NodeAlias>
+  <NodeClassID>
+    <CodeName>GCWS.NewsSection</CodeName>
+    <GUID>101c89e6-7e5c-402f-9974-6a56c3b20e66</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </NodeClassID>
+  <NodeGUID>7a7013a0-8f0c-45c2-8a8d-35ffc0df8a88</NodeGUID>
+  <NodeIsACLOwner>False</NodeIsACLOwner>
+  <NodeName>News</NodeName>
+  <NodeOrder>3</NodeOrder>
+  <NodeOwner>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </NodeOwner>
+  <NodeParentID>
+    <CodeName>/</CodeName>
+    <GUID>b5e0cc18-2d4a-43ac-baee-0ce045952801</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>gcws</CodeName>
+      <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </NodeParentID>
+  <NodeSiteID>
+    <CodeName>gcws</CodeName>
+    <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </NodeSiteID>
+</cms.node>

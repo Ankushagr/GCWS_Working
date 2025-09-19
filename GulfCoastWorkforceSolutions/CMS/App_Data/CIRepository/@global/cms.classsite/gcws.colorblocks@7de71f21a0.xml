@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.classsite>
+  <Parent>
+    <CodeName>GCWS.ColorBlocks</CodeName>
+    <GUID>7b6cbb9e-4ae1-4f6c-a229-fc2f271a19b1</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="gcws">
+      <SiteID>
+        <CodeName>gcws</CodeName>
+        <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+        <ObjectType>cms.site</ObjectType>
+      </SiteID>
+    </Binding>
+  </Bindings>
+</cms.classsite>

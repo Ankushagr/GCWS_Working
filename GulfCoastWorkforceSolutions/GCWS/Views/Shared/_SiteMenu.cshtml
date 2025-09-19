@@ -1,0 +1,14 @@
+﻿@using Kentico.PageBuilder.Web.Mvc
+@using Kentico.Web.Mvc
+@using GCWS.Models
+
+@model IEnumerable<MenuItemViewModel>
+
+
+    @foreach (MenuItemViewModel menuItem in Model)
+    {
+        @* Iterates through the view model collection and renders HTML links for the menu items *@
+        <li class="nav-item">
+            <a  class="nav-link" href="@Url.Content(menuItem.MenuItemRelativeUrl)" title="@menuItem.MenuItemText">@menuItem.MenuItemText</a>
+        </li>
+    }

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.emailtemplate>
+  <EmailTemplateDisplayName>Workflow - Page approved</EmailTemplateDisplayName>
+  <EmailTemplateGUID>5d4c7b49-0a86-457e-b39c-79be2cc48173</EmailTemplateGUID>
+  <EmailTemplateName>Workflow.Approved</EmailTemplateName>
+  <EmailTemplatePlainText>
+<![CDATA[
+This is an automatic notification sent by Kentico CMS. The following page was approved. 
+
+Page: [url={%DocumentEditUrl%}]{%documentname%}[/url] {% DocumentPreviewUrl.IsNullOrEmpty() ? "" : "([url=" + DocumentPreviewUrl + "]preview[/url])"|(identity)GlobalAdministrator|(hash)27c3de427c66bfddf7e52ca433b2c69d90c1e340f1be0808b2307491a6b1c195%}
+Approved by: {%approvedby%} 
+Approved when: {%approvedwhen%} 
+Original step: {%originalstepname%} 
+Current step: {%currentstepname%} 
+Comment: 
+{%comment%} 
+
+]]>
+  </EmailTemplatePlainText>
+  <EmailTemplateSubject>
+    <![CDATA[Page '{%DocumentName%}' approved]]>
+  </EmailTemplateSubject>
+  <EmailTemplateText>
+<![CDATA[
+<html>
+  <head>
+  </head>
+  <body style="font-size: 12px; font-family: arial">
+    <p>
+    This is an automatic notification sent by Kentico CMS. The following page was approved.
+    </p>
+    <p>
+    <strong>Page:</strong> <a href="{%DocumentEditUrl%}">{%documentname%}</a> {% DocumentPreviewUrl.IsNullOrEmpty() ? "" : "(<a href=\"" + DocumentPreviewUrl + "\">preview</a>)"|(encode)false|(identity)GlobalAdministrator|(hash)ae5e1a3ec4035ae6ef4e63b2d7f8a037e53ccc781c3a810437e59aae290db2b0%}
+    <br />
+    <br />
+    <strong>Approved by:</strong> {%ApprovedBy%}
+    <br />
+    <strong>Approved when:</strong> {%ApprovedWhen%}
+    <br />
+    <strong>Original step:</strong> {%originalstepname%}
+    <br />
+    <strong>Current step:</strong> {%currentstepname%}
+    <br />
+    <strong>Comment:</strong>
+    <br />
+    {%Comment%}
+    </p>
+  </body>
+</html>
+]]>
+  </EmailTemplateText>
+  <EmailTemplateType>workflow</EmailTemplateType>
+</cms.emailtemplate>

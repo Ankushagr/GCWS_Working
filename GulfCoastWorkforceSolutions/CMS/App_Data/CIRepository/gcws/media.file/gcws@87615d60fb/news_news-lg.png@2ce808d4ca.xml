@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<media.file>
+  <FileCreatedByUserID>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </FileCreatedByUserID>
+  <FileCreatedWhen>2025-09-15 04:22:11Z</FileCreatedWhen>
+  <FileDescription />
+  <FileExtension>.png</FileExtension>
+  <FileGUID>a9a4cbc8-627c-4721-8426-97060bf53567</FileGUID>
+  <FileImageHeight>600</FileImageHeight>
+  <FileImageWidth>900</FileImageWidth>
+  <FileLibraryID>
+    <CodeName>GCWS</CodeName>
+    <GUID>e0049cbc-380e-4ebd-a3fb-71cef0b22ba2</GUID>
+    <ObjectType>media.library</ObjectType>
+    <Site>
+      <CodeName>gcws</CodeName>
+      <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </FileLibraryID>
+  <FileMimeType>image/png</FileMimeType>
+  <FileModifiedByUserID>
+    <CodeName>administrator</CodeName>
+    <GUID>6415b8ce-8072-4bcd-8e48-9d7178b826b7</GUID>
+    <ObjectType>cms.user</ObjectType>
+  </FileModifiedByUserID>
+  <FileName>news-lg</FileName>
+  <FilePath>News/news-lg.png</FilePath>
+  <FileSiteID>
+    <CodeName>gcws</CodeName>
+    <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </FileSiteID>
+  <FileSize>1211052</FileSize>
+  <FileTitle />
+</media.file>

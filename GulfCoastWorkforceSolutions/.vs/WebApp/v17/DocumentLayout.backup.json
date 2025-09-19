@@ -1,9 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GulfCoastWorkforceSolutions\\",
+  "WorkspaceRootPath": "D:\\GCWS Kentico Git\\Kentico13\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BB8817AE-48DF-4672-A1CB-CFB7441B88DA}|CMS\\CMSApp.csproj|d:\\gulfcoastworkforcesolutions\\cms\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\GCWS Kentico Git\\Kentico13\\CMS\\Old_App_Code\\CMSClasses\\Pages\\GCWS\\Home.generated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CMS\\Old_App_Code\\CMSClasses\\Pages\\GCWS\\Home.generated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB8817AE-48DF-4672-A1CB-CFB7441B88DA}|CMS\\CMSApp.csproj|D:\\GCWS Kentico Git\\Kentico13\\cms\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{BB8817AE-48DF-4672-A1CB-CFB7441B88DA}|CMS\\CMSApp.csproj|solutionrelative:cms\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -14,12 +18,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": 19,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -99,14 +99,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Home.generated.cs",
+              "DocumentMoniker": "D:\\GCWS Kentico Git\\Kentico13\\CMS\\Old_App_Code\\CMSClasses\\Pages\\GCWS\\Home.generated.cs",
+              "RelativeDocumentMoniker": "CMS\\Old_App_Code\\CMSClasses\\Pages\\GCWS\\Home.generated.cs",
+              "ToolTip": "D:\\GCWS Kentico Git\\Kentico13\\CMS\\Old_App_Code\\CMSClasses\\Pages\\GCWS\\Home.generated.cs",
+              "RelativeToolTip": "CMS\\Old_App_Code\\CMSClasses\\Pages\\GCWS\\Home.generated.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-14T04:03:31.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Web.config",
-              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\CMS\\Web.config",
-              "RelativeDocumentMoniker": "CMS\\Web.config",
-              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\CMS\\Web.config",
-              "RelativeToolTip": "CMS\\Web.config",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\GCWS Kentico Git\\Kentico13\\CMS\\web.config",
+              "RelativeDocumentMoniker": "CMS\\web.config",
+              "ToolTip": "D:\\GCWS Kentico Git\\Kentico13\\CMS\\web.config",
+              "RelativeToolTip": "CMS\\web.config",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-13T19:54:50.505Z",
+              "WhenOpened": "2025-07-21T04:10:26.793Z",
               "EditorCaption": ""
             }
           ]

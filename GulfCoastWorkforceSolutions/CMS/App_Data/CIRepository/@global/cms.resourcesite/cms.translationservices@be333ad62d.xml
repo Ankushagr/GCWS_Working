@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcesite>
+  <Parent>
+    <CodeName>CMS.TranslationServices</CodeName>
+    <GUID>1ab44056-7cc1-4ad2-bc49-3adae489654f</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="gcws">
+      <SiteID>
+        <CodeName>gcws</CodeName>
+        <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+        <ObjectType>cms.site</ObjectType>
+      </SiteID>
+    </Binding>
+  </Bindings>
+</cms.resourcesite>

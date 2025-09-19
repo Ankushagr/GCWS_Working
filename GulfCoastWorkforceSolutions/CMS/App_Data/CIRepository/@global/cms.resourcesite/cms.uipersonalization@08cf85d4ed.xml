@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcesite>
+  <Parent>
+    <CodeName>CMS.UIPersonalization</CodeName>
+    <GUID>ab8fa139-0db5-4276-b8ad-e408bd981696</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="gcws">
+      <SiteID>
+        <CodeName>gcws</CodeName>
+        <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+        <ObjectType>cms.site</ObjectType>
+      </SiteID>
+    </Binding>
+  </Bindings>
+</cms.resourcesite>

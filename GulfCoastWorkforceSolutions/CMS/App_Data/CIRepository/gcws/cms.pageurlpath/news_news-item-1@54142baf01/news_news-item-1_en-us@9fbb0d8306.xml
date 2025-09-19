@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.pageurlpath>
+  <PageUrlPathCulture>en-US</PageUrlPathCulture>
+  <PageUrlPathGUID>3e1b99b6-4fae-46a2-bb70-88cc28264834</PageUrlPathGUID>
+  <PageUrlPathNodeID>
+    <CodeName>/News/News-Item-1</CodeName>
+    <GUID>53d4f010-eb1c-4735-89ef-4729960fecab</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>gcws</CodeName>
+      <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </PageUrlPathNodeID>
+  <PageUrlPathSiteID>
+    <CodeName>gcws</CodeName>
+    <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </PageUrlPathSiteID>
+  <PageUrlPathUrlPath>News/News-Item-1</PageUrlPathUrlPath>
+  <PageUrlPathUrlPathHash>
+    <![CDATA[BAC7362009D85169EDD0A5B285EDA5C2772A7F5481E0641271A96DA69D84384F]]>
+  </PageUrlPathUrlPathHash>
+</cms.pageurlpath>

@@ -21,12 +21,10 @@
     function controller() {
         var ctrl = this;
 
-        this.$onInit = function () {
-            /* Filter only conversions which belong to funnel */
-            ctrl.conversions = ctrl.report.conversions.filter(function (conversion) {
-                return conversion.isFunnelStep;
-            });
-        };
+        /* Filter only conversions which belong to funnel */
+        ctrl.conversions = ctrl.report.conversions.filter(function(conversion) {
+            return conversion.isFunnelStep;
+        });
     }
 
 }(angular));

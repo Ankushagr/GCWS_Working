@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.pageurlpath>
+  <PageUrlPathCulture>en-US</PageUrlPathCulture>
+  <PageUrlPathGUID>7cfb834a-78ee-4d18-bf30-99db0bb52bd8</PageUrlPathGUID>
+  <PageUrlPathNodeID>
+    <CodeName>/Home/Color-Blocks/Educators</CodeName>
+    <GUID>354b23a3-3cea-449f-b64e-74a6a762e1e0</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>gcws</CodeName>
+      <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </PageUrlPathNodeID>
+  <PageUrlPathSiteID>
+    <CodeName>gcws</CodeName>
+    <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </PageUrlPathSiteID>
+  <PageUrlPathUrlPath>Home/Educators</PageUrlPathUrlPath>
+  <PageUrlPathUrlPathHash>
+    <![CDATA[6D834737B8742399EDAD9EFD4ED5256D4C5602C51C5799CFDF8E968C8103AEE9]]>
+  </PageUrlPathUrlPathHash>
+</cms.pageurlpath>

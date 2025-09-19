@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>GCWS</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Color Blocks</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="ColorBlocksID" columntype="integer" guid="9e4c01b6-38d0-4a8d-ac2b-3803ba531ad9" isPK="true">
+        <properties>
+          <fieldcaption>ColorBlocksID</fieldcaption>
+        </properties>
+      </field>
+      <field column="Title" columnsize="200" columntype="text" guid="051e4462-c657-44e2-94c3-53403e6fb4bd" visible="true">
+        <properties>
+          <fieldcaption>Title</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="Description" columntype="longtext" guid="c7e96107-4ae6-4b66-bb8f-9cb7cb1b02df" visible="true">
+        <properties>
+          <fieldcaption>Description</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>HtmlAreaControl</controlname>
+          <Dialogs_Content_Hide>False</Dialogs_Content_Hide>
+          <HeightUnitType>PX</HeightUnitType>
+          <MediaDialogConfiguration>True</MediaDialogConfiguration>
+          <ShowAddStampButton>False</ShowAddStampButton>
+          <WidthUnitType>PX</WidthUnitType>
+        </settings>
+      </field>
+      <field allowempty="true" column="Color" columnsize="10" columntype="text" guid="03f81235-c31a-4484-8220-0337dbbd54bd" visible="true">
+        <properties>
+          <fieldcaption>Background Color</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="Icon" columntype="file" guid="4434289d-e70a-4803-a1f6-f708fcd8d711" visible="true">
+        <properties>
+          <fieldcaption>Icon</fieldcaption>
+        </properties>
+        <settings>
+          <Allowed_Extensions>gif;jpg;jpeg;png;svg;</Allowed_Extensions>
+          <controlname>DirectUploadControl</controlname>
+          <Extensions>custom</Extensions>
+        </settings>
+      </field>
+      <field allowempty="true" column="CTALabel" columnsize="200" columntype="text" guid="25d5554f-2221-4bcb-b1ab-3d21d41c817d" visible="true">
+        <properties>
+          <fieldcaption>CTALabel</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="CTAUrl" columnsize="200" columntype="text" guid="d7f7c374-a530-4dcc-bbe8-1e309b8035c5" visible="true">
+        <properties>
+          <fieldcaption>CTAUrl</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="BannerCssClass" columnsize="200" columntype="text" guid="d36e6171-8018-462d-8717-1e93fa2016b0" visible="true">
+        <properties>
+          <fieldcaption>Banner Css Class</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassFormLayout />
+  <ClassGUID>7b6cbb9e-4ae1-4f6c-a229-fc2f271a19b1</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>True</ClassHasURL>
+  <ClassIconClass>icon-doc-o</ClassIconClass>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsNavigationItem>True</ClassIsNavigationItem>
+  <ClassName>GCWS.ColorBlocks</ClassName>
+  <ClassNodeNameSource>Title</ClassNodeNameSource>
+  <ClassSearchCreationDateColumn>DocumentCreatedWhen</ClassSearchCreationDateColumn>
+  <ClassSearchEnabled>True</ClassSearchEnabled>
+  <ClassSearchIndexDataSource>1</ClassSearchIndexDataSource>
+  <ClassSearchSettings>
+    <search>
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="05b2e53e-0c70-4625-8944-7b78186d3134" name="Title" searchable="False" tokenized="True" updatetrigger="True" />
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="07eedd08-cd1d-498a-bda9-382a41b3ee8b" name="CTAUrl" searchable="False" tokenized="True" updatetrigger="True" />
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="23717fe1-ac9b-4729-8eed-261544cdbd09" name="BannerCssClass" searchable="False" tokenized="True" updatetrigger="True" />
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="3c46dfdd-e77c-44a7-b835-25c59ffc050b" name="CTALabel" searchable="False" tokenized="True" updatetrigger="True" />
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="3cc47dc0-dfa9-4b24-8821-abd8d5bb602d" name="ColorBlocksID" searchable="True" tokenized="False" updatetrigger="True" />
+      <item azurecontent="False" azureretrievable="False" azuresearchable="False" content="False" id="9eb061a2-21dc-4942-b315-b238fcb692ee" name="Icon" searchable="False" tokenized="False" updatetrigger="False" />
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="f1a86d20-0ee7-43b7-9af0-173458b09671" name="Description" searchable="False" tokenized="True" updatetrigger="True" />
+    </search>
+  </ClassSearchSettings>
+  <ClassSearchTitleColumn>DocumentName</ClassSearchTitleColumn>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassTableName>GCWS_ColorBlocks</ClassTableName>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>

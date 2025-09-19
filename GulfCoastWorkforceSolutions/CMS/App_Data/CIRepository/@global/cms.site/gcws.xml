@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.site>
+  <SiteDisplayName>Gulf Coast Workforce Solutions</SiteDisplayName>
+  <SiteDomainName>localhost/GCWS_CMS</SiteDomainName>
+  <SiteGUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</SiteGUID>
+  <SiteName>gcws</SiteName>
+  <SitePresentationURL>http://localhost/GCWS_MVC</SitePresentationURL>
+</cms.site>

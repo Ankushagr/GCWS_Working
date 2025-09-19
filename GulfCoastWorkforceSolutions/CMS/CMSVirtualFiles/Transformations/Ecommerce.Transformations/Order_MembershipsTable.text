@@ -1,0 +1,1 @@
+﻿{% " - " + GetResourceString(MembershipDisplayName) + " (" + (String.IsNullOrEmpty(ValidTo) ? "never expires" : "expires after " + Format(ValidTo,"{0:G}")) + ")" |(identity)GlobalAdministrator|(hash)413b8357a8f9b601b29749165e624f2fefc9c6e491c0bf06e11596bc6e56aa15%} <br />

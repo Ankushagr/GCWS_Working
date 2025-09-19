@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.emailtemplate>
+  <EmailTemplateDisplayName>E-commerce - Automatic registration</EmailTemplateDisplayName>
+  <EmailTemplateGUID>680db946-cefd-475f-b65f-84dc4d53051c</EmailTemplateGUID>
+  <EmailTemplateName>Ecommerce.AutomaticRegistration</EmailTemplateName>
+  <EmailTemplateSubject>
+    <![CDATA[Welcome to {% CurrentSite.SiteDomainName |(identity)GlobalAdministrator|(hash)598894ad52e109be37cb15834b023755000d2f32e40a15e571e7d6301c03d98d%}]]>
+  </EmailTemplateSubject>
+  <EmailTemplateText>
+<![CDATA[
+<html>
+  <head></head>
+  <body>  
+    <p>
+      Dear {% UserFullName %},welcome to 
+      <a href="{% CurrentSite.SitePresentationURL |(identity)GlobalAdministrator|(hash)964e2e4ca66bafbc7aa4cf147608fc5b1c41bb749de727201b739c110d4c154c%}">{% CurrentSite.SiteDomainName |(identity)GlobalAdministrator|(hash)598894ad52e109be37cb15834b023755000d2f32e40a15e571e7d6301c03d98d%}</a>! 
+      Meanwhile, we have prepared an account for you. 
+      With your new account you can easily review your orders and manage your personal information.
+    </p>
+    <p><strong>Login details:</strong></p>
+    E-mail(username): {% UserName %}<br/>
+    Password: {% Password %}<br />
+    <br />
+    <p>We recommend changing your password directly after you log in.</p>
+  </body>
+</html>
+]]>
+  </EmailTemplateText>
+  <EmailTemplateType>ecommerce</EmailTemplateType>
+</cms.emailtemplate>

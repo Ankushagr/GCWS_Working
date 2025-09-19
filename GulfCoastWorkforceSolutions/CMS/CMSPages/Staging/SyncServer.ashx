@@ -1,1 +1,0 @@
-<%@ WebHandler Language="C#" Class="CMS.Synchronization.WSE3.SyncServerv2" %>

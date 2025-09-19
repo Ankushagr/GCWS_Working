@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.pageurlpath>
+  <PageUrlPathCulture>en-US</PageUrlPathCulture>
+  <PageUrlPathGUID>cab69e9f-1341-498a-af4a-5178e7a0ead2</PageUrlPathGUID>
+  <PageUrlPathNodeID>
+    <CodeName>/Home/Carousel/Banner1</CodeName>
+    <GUID>1d052d17-d8f8-4349-a009-c884c816d975</GUID>
+    <ObjectType>cms.node</ObjectType>
+    <Site>
+      <CodeName>gcws</CodeName>
+      <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+      <ObjectType>cms.site</ObjectType>
+    </Site>
+  </PageUrlPathNodeID>
+  <PageUrlPathSiteID>
+    <CodeName>gcws</CodeName>
+    <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </PageUrlPathSiteID>
+  <PageUrlPathUrlPath>Home/Banner1</PageUrlPathUrlPath>
+  <PageUrlPathUrlPathHash>
+    <![CDATA[E52A6D2C22B21361ED60854FA196AB2FD10372F6CC25C0219365483774F30647]]>
+  </PageUrlPathUrlPathHash>
+</cms.pageurlpath>

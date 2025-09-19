@@ -1,0 +1,27 @@
+﻿@model GCWS.Models.Widgets.ColorBlocksWidgetViewModel
+
+@if (Model.colorBlocksItems.Count > 0)
+{
+    foreach (var items in Model.colorBlocksItems)
+    {
+        <div class="col-lg-3 col-sm-6 col-6 bt_col">
+            <a href="@items.CtaUrl" title="@items.CtaLable">
+                <div class="btn_card @items.Color">
+                    <div class="btn_header">
+                        <div class="btn_icon">
+                            <img src="@items.Icon" alt="School Icon">
+                        </div>
+                        <span class="btn_txt">@items.Title</span>
+                    </div>
+                    <div class="btn-desc">
+                        <p>@items.Description</p>
+                    </div>
+                    <span class="btn_arrow">
+                        <img src="~/content/img/arrow_forward.svg" alt="Go" />
+                    </span>
+                </div>
+            </a>
+        </div>
+
+    }
+}

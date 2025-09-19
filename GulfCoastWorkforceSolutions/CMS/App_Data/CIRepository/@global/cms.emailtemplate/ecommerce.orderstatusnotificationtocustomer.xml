@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.emailtemplate>
+  <EmailTemplateDisplayName>E-commerce - Order status notification to customer</EmailTemplateDisplayName>
+  <EmailTemplateGUID>68ca5608-f80f-4972-88f3-24daaf669c32</EmailTemplateGUID>
+  <EmailTemplateName>Ecommerce.OrderStatusNotificationToCustomer</EmailTemplateName>
+  <EmailTemplateText>
+<![CDATA[
+<html>
+<head>
+</head>
+<body>
+    <p>Status of your order has changed.</p>
+    <table cellspacing="0" cellpadding="5" border="1" width="600px" style="border-color: black;">
+        <tr>
+            <td colspan="2" valign="bottom" height="50">
+                <table width="100%">
+                    <tr>
+                        <td style="text-align: left; vertical-align: bottom;">
+                            <span style="font-size: 18pt">Your order</span>
+                        </td>
+                        <td style="text-align: center; vertical-align: middle;">
+                            <span style="font-family: Garamond, Times, serif; font-size: 24pt; font-style: italic;">Company logo</span>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left">
+                <br />
+                <table width="100%">
+                    <tr>
+                        <td style="text-align: left;" valign="bottom">
+                            <strong>Invoice number:</strong>
+                        </td>
+                        <td style="text-align: right; padding-right: 10px">{%Order.OrderInvoiceNumber|(identity)GlobalAdministrator|(hash)62dc5391af00cd82e5244fbd3a624023d40434edcf13908202a4bdbcc1ee5a86%}
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+            <td style="text-align: left">
+                <br />
+                <table width="100%">
+                    <tr>
+                        <td style="text-align: left;" valign="bottom">
+                            <strong>Order date:</strong>
+                        </td>
+                        <td style="text-align: right; padding-right: 10px">{% GetCurrentDateTimeString(Format(Order.OrderDate, "{0:g}"), (Customer.CustomerUser == null) ? "" : Customer.CustomerUser.UserName)|(identity)GlobalAdministrator|(hash)c57903de6befd409578a74aee6c405ca298aa450361b20d16ff768768d996cb8%}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;" valign="bottom">
+                            <strong>Order status:</strong>
+                        </td>
+                        <td style="text-align: right; padding-right: 10px">{%GetResourceString(OrderStatus.StatusDisplayName)|(identity)GlobalAdministrator|(hash)d270ed3efd17d87b2b0132c51ad9714b0de5d95f83a3681be814578d2422647a%}
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align: left; vertical-align: top" width="50%">
+                <strong>Supplier</strong>
+                <br />
+                <br />
+                <table>
+                    <tr>
+                        <td>Company address
+                        </td>
+                    </tr>
+                </table>
+                <br />
+            </td>
+            <td style="text-align: left; vertical-align: top" width="50%">
+                <span style="font-weight: bold">Customer </span>
+                <br />
+                <br />
+                {%BillingAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address")|(identity)GlobalAdministrator|(hash)12ab415921e0584e6cb6ba9c0c5aef4a05288e5a0bccc84c34ad613ee21bba09%}
+      <br />
+                <strong>Company address:</strong>
+                {%CompanyAddress.ApplyTransformation("Ecommerce.Transformations.Order_Address")|(identity)GlobalAdministrator|(hash)05738d631d22bc43866b229da412c15bf9e464c1b5e0a591a8a6fcfeafd08a87%}
+      <br />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td style="text-align: left">
+                            <span style="font-weight: bold">Payment option </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">{%GetResourceString(PaymentOption.PaymentOptionDisplayName)|(identity)GlobalAdministrator|(hash)a96a6426b32432911720bea50594b3bafb2b3dd80acd2259623c80c78215ed00%}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td style="text-align: left">
+                            <span style="font-weight: bold">Shipping option </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">{%GetResourceString(ShippingOption.ShippingOptionDisplayName)|(identity)GlobalAdministrator|(hash)d4720740b22f0d7e86d95ab55540546474fec61aa9218fde325ee2ae00a472aa%}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="text-align: left; padding: 8px">{%ContentTable.ApplyTransformation("Ecommerce.Transformations.Order_ContentTable", "Ecommerce.Transformations.Order_ContentTableHeader", "Ecommerce.Transformations.Order_ContentTableFooter") |(identity)GlobalAdministrator|(hash)c6dd879b06e4bfdb35b8e47e9a938332e9f54ae3fb85a9c8b1f5c6adbd439fb4%} 
+			<hr size="1" />
+                <table cellpadding="5" width="50%" style="float: right;">
+                    <tbody>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td style="text-align: right; padding-right: 0px">{% TotalItemsPrice.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)a6d27f9ba04cc898071aa4660ee02f258a308d0553a497e73348c67b3f193520%}</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td style="text-align: right; padding-right: 0px">{% TotalShipping.Format(Currency.CurrencyFormatString)|(encode)true |(identity)GlobalAdministrator|(hash)9f63a74275a13ae56a0a2475454a0a37920fcd1cd4a3da33e93a6d0e99e82da0%}</td>
+                        </tr>
+                       <tr>
+                            <td colspan="2" style="padding: 0; text-align: right;">{% OtherPaymentsSummary.Any() ? OtherPaymentsSummary.ApplyTransformation("Ecommerce.Transformations.Order_OrderRelatedDiscountsContent", "Ecommerce.Transformations.Order_OrderRelatedDiscountsHeader", "Ecommerce.Transformations.Order_OrderRelatedDiscountsFooter") : "" |(identity)GlobalAdministrator|(hash)890ad415c8fc6518e4bc0e069256da8219880ab78a8522d9681c3f023a8a919a%}</td>
+                        </tr>
+                        <tr>
+                            <td><span style="color: black; font-weight: bold">TOTAL (incl. tax):</span></td>
+                            <td style="text-align: right; padding-right: 0px; color: black; font-weight: bold">{% GrandTotal.Format(Currency.CurrencyFormatString)|(encode)true|(identity)GlobalAdministrator|(hash)d6976b24e36f4283a211f8874b3b260ea1b86636fc2a6648eb163bbbc50c275d%}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table width="100%">
+                    <tr>
+                        <td style="text-align: left">
+                            <span style="font-weight: bold">Order note </span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">{%Order.OrderNote|(encode)true|(identity)GlobalAdministrator|(hash)65b7583a23d2101cc9150938b3d6160cb82e5f3c670428d20121790560e1c7bc%}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+]]>
+  </EmailTemplateText>
+  <EmailTemplateType>ecommerce</EmailTemplateType>
+</cms.emailtemplate>

@@ -1,0 +1,24 @@
+﻿{% if (Customer.CustomerCompany != null) { %}
+  {% Localize(Customer.CustomerCompany)|(encode)true } %}
+  <br />
+{% } |(identity)GlobalAdministrator|(hash)f6ff7fb2e7f60e3d6e67e0face5b7cf313871c4689c0a1a216456d0ea7adfbf2%}
+{% if (Customer.CustomerTaxRegistrationID != null) { %}
+  Tax registration ID: 
+  {% Localize(Customer.CustomerTaxRegistrationID)|(encode)true } %}
+  <br />
+{% } |(identity)GlobalAdministrator|(hash)27495d81dc1b304912ce4301226a39871eee3123f50e796714fd1d8694b669ae%}
+{% if (Customer.CustomerOrganizationID != null) { %}
+  Organization ID:
+  {% Localize(Customer.CustomerOrganizationID)|(encode)true } %}
+  <br />
+{% } |(identity)GlobalAdministrator|(hash)0d79df95dbd627d27284d7bd85e6f7b7c88239022fbd6794324c95b9183a38c8%}
+
+{% Localize(AddressPersonalName)|(encode)true %}<br />
+{% Localize(AddressLine1)|(encode)true %}<br />
+{% if (AddressLine2 != null) { %}
+  {% Localize(AddressLine2)|(encode)true } %}
+  <br />
+{% } |(identity)GlobalAdministrator|(hash)61b8fcd5dfa7596084e2efc74d6659e0674c518c37e9d504ce2ef3fd170dcea0%}
+{% Localize(AddressCity)|(encode)true %}<br />
+{% Localize(AddressZip)|(encode)true %}<br />
+{% Localize(Country.CountryDisplayName)|(encode)true |(identity)GlobalAdministrator|(hash)8ed33ddfc011169c300c19ffa032288f0a5c28ea2f98198f2776807cb3f024e5%}{% if (State != null) { ", " + Localize(State.StateDisplayName)|(encode)true } |(identity)GlobalAdministrator|(hash)0ca21df711874756bc540c4791d2287a673dc5fd65bc545ccc93e15a8e9c4d20%}

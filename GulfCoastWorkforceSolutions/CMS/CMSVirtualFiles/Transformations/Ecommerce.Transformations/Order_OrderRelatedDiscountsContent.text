@@ -1,0 +1,4 @@
+﻿<tr>
+<td style="padding: 0px 8px 0px 5px; text-align: left;">{% Localize(Name)|(encode)true %}</td>
+<td style="vertical-align: top; text-align: right;">&#8209;&nbsp;{% (Value.Format(Currency.CurrencyFormatString))|(encode)true |(identity)GlobalAdministrator|(hash)ffeb69a0d9c35fd6b73f67b05c06e108a410647a42d3d1de8245debc0f582fa5%}</td>
+</tr>

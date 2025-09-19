@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.attachment>
+  <AttachmentDocumentID>
+    <CodeName>en-US</CodeName>
+    <GUID>a2b6fe46-0677-4a9e-adbd-9ad9c1be7e6c</GUID>
+    <ObjectType>cms.documentlocalization</ObjectType>
+    <Parent>
+      <CodeName>/Home/Color-Blocks/Educators</CodeName>
+      <GUID>354b23a3-3cea-449f-b64e-74a6a762e1e0</GUID>
+      <ObjectType>cms.node</ObjectType>
+      <Site>
+        <CodeName>gcws</CodeName>
+        <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+        <ObjectType>cms.site</ObjectType>
+      </Site>
+    </Parent>
+  </AttachmentDocumentID>
+  <AttachmentExtension>.svg</AttachmentExtension>
+  <AttachmentGUID>ff8a919a-bda4-4ad9-ad3c-f95c5fd185f3</AttachmentGUID>
+  <AttachmentImageHeight>0</AttachmentImageHeight>
+  <AttachmentImageWidth>0</AttachmentImageWidth>
+  <AttachmentMimeType>image/svg+xml</AttachmentMimeType>
+  <AttachmentName>school.svg</AttachmentName>
+  <AttachmentSiteID>
+    <CodeName>gcws</CodeName>
+    <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </AttachmentSiteID>
+  <AttachmentSize>410</AttachmentSize>
+</cms.attachment>

@@ -27,10 +27,7 @@
 
         objectiveService.registerResetObjectiveCallback(resetObjective);
         ctrl.objective = objectiveService.getObjective();
-
-        this.$onInit = function () {
-            ctrl.selectedConversionName = getSelectedConversionName(ctrl.objective);
-        };
+        ctrl.selectedConversionName = getSelectedConversionName(ctrl.objective);       
 
         ctrl.canAddObjective = function () {
             var hasAnyConversion = _.find(ctrl.conversions, function(conversion) {

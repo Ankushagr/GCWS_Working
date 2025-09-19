@@ -1,12 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\GulfCoastWorkforceSolutions\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{BB8817AE-48DF-4672-A1CB-CFB7441B88DA}|CMS\\CMSApp.csproj|d:\\gulfcoastworkforcesolutions\\cms\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BB8817AE-48DF-4672-A1CB-CFB7441B88DA}|CMS\\CMSApp.csproj|solutionrelative:cms\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\GCWS Kentico Git\\Kentico13\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,12 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 20,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -95,19 +86,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\GulfCoastWorkforceSolutions\\CMS\\Web.config",
-              "RelativeDocumentMoniker": "CMS\\Web.config",
-              "ToolTip": "D:\\GulfCoastWorkforceSolutions\\CMS\\Web.config",
-              "RelativeToolTip": "CMS\\Web.config",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAABcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-13T19:54:50.505Z",
-              "EditorCaption": ""
             }
           ]
         },

@@ -20,9 +20,7 @@
 
     /*@ngInject*/
 	function controller($sce) {
-		this.$onInit = function () {
-		    this.notes = $sce.trustAsHtml(this.notes);
-		};
+	    this.notes = $sce.trustAsHtml(this.notes);
 	}
 
 }(angular));

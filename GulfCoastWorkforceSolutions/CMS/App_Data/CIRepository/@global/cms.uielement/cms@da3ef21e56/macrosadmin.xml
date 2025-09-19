@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.uielement>
+  <ElementCaption>{$administration-system.debugadmin$}</ElementCaption>
+  <ElementCheckModuleReadPermission>True</ElementCheckModuleReadPermission>
+  <ElementDisplayName>Macros (K#) - Admin</ElementDisplayName>
+  <ElementFromVersion>13.0</ElementFromVersion>
+  <ElementGUID>bdf7db28-1007-4d15-9454-271a96166e8a</ElementGUID>
+  <ElementIconClass />
+  <ElementIsCustom>False</ElementIsCustom>
+  <ElementIsGlobalApplication>False</ElementIsGlobalApplication>
+  <ElementIsMenu>False</ElementIsMenu>
+  <ElementName>MacrosAdmin</ElementName>
+  <ElementOrder>2</ElementOrder>
+  <ElementParentID>
+    <CodeName>Macros</CodeName>
+    <GUID>7e2c1ae4-e39d-4903-ae63-cbf693685c02</GUID>
+    <ObjectType>cms.uielement</ObjectType>
+    <Parent>
+      <CodeName>CMS</CodeName>
+      <GUID>ce1a65a0-80dc-4c53-b0e7-bdecf0aa8c02</GUID>
+      <ObjectType>cms.resource</ObjectType>
+    </Parent>
+  </ElementParentID>
+  <ElementProperties>
+    <Data>
+      <DisplayBreadcrumbs>False</DisplayBreadcrumbs>
+    </Data>
+  </ElementProperties>
+  <ElementRequiresGlobalAdminPriviligeLevel>False</ElementRequiresGlobalAdminPriviligeLevel>
+  <ElementResourceID>
+    <CodeName>CMS</CodeName>
+    <GUID>ce1a65a0-80dc-4c53-b0e7-bdecf0aa8c02</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ElementResourceID>
+  <ElementSize>0</ElementSize>
+  <ElementTargetURL>~/CMSModules/System/Debug/Log.aspx?name=macros</ElementTargetURL>
+  <ElementType>Url</ElementType>
+  <ElementVisibilityCondition>
+    <![CDATA[{%Debug.IsDebugEnabled("macros") && (Settings.CMSDebugAllMacros || Settings.CMSDebugEverythingEverywhere)|(identity)GlobalAdministrator|(hash)f8b1d16c81f45655ff6f4c2555884985330b14f74c1bf0659436d2a39ccce3f3%}]]>
+  </ElementVisibilityCondition>
+</cms.uielement>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>GCWS</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>GCWS Root</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="RootID" columntype="integer" guid="1785230f-5422-485e-bc0a-8fc795ba0108" isPK="true">
+        <properties>
+          <fieldcaption>RootID</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="Header" columnsize="200" columntype="text" guid="9f84184e-f352-49f9-87be-663c2199653a" visible="true">
+        <properties>
+          <fieldcaption>Header</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassFormLayout />
+  <ClassGUID>580bb60e-d114-4c8f-bb4b-cfa941d0352c</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>True</ClassHasURL>
+  <ClassIconClass>icon-doc-o</ClassIconClass>
+  <ClassInheritsFromClassID>0</ClassInheritsFromClassID>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsNavigationItem>True</ClassIsNavigationItem>
+  <ClassName>GCWS.Root</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchCreationDateColumn>DocumentCreatedWhen</ClassSearchCreationDateColumn>
+  <ClassSearchEnabled>True</ClassSearchEnabled>
+  <ClassSearchIndexDataSource>1</ClassSearchIndexDataSource>
+  <ClassSearchSettings>
+    <search>
+      <item azurecontent="True" azureretrievable="False" azuresearchable="True" content="True" id="5255f9ad-31cd-45f2-afaf-90b128947c59" name="Header" searchable="False" tokenized="True" updatetrigger="True" />
+      <item azurecontent="False" azureretrievable="True" azuresearchable="False" content="False" id="d7d11502-aaea-4ff9-960f-32abb5349c0f" name="RootID" searchable="True" tokenized="False" updatetrigger="True" />
+    </search>
+  </ClassSearchSettings>
+  <ClassSearchTitleColumn>DocumentName</ClassSearchTitleColumn>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassTableName>GCWS_Root</ClassTableName>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>

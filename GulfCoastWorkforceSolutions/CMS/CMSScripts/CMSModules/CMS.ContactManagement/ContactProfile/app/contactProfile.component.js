@@ -25,9 +25,7 @@
 
     /*@ngInject*/
     function controller(contactProfileService) {
-        this.$onInit = function () {
-            activate.apply(this);
-        };
+        activate.apply(this);
 
         function activate() {
             contactProfileService.getContact(this.contactId)

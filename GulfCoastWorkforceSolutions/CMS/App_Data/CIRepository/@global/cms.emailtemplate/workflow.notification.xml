@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.emailtemplate>
+  <EmailTemplateDisplayName>Workflow - Notification</EmailTemplateDisplayName>
+  <EmailTemplateGUID>27f608f0-0a20-4a1b-9474-97bde3c7a725</EmailTemplateGUID>
+  <EmailTemplateName>Workflow.Notification</EmailTemplateName>
+  <EmailTemplatePlainText>
+<![CDATA[
+This is an automatic notification sent by Kentico CMS. The following page status has changed. 
+
+Page: [url={%DocumentEditUrl%}]{%documentname%}[/url] {% DocumentPreviewUrl.IsNullOrEmpty() ? "" : "([url=" + DocumentPreviewUrl + "]preview[/url])"|(identity)GlobalAdministrator|(hash)27c3de427c66bfddf7e52ca433b2c69d90c1e340f1be0808b2307491a6b1c195%}
+Action: {%DocumentActionName%} 
+Modified by: {%User.Email|(identity)GlobalAdministrator|(hash)0ffbeeb3dfbed29542b9161eafe84a890472a996ca58b7b04d1da946723ee347%} 
+Modified when: {%approvedwhen%} 
+Original step: {%originalstepname%} 
+Current step: {%currentstepname%} 
+Comment: 
+{%comment%} 
+]]>
+  </EmailTemplatePlainText>
+  <EmailTemplateSubject>
+    <![CDATA[Page '{%DocumentName%}' status changed]]>
+  </EmailTemplateSubject>
+  <EmailTemplateText>
+<![CDATA[
+<html>
+  <head>
+  </head>
+  <body style="font-size: 12px; font-family: arial">
+    <p>
+    This is an automatic notification sent by Kentico CMS. The following page status has changed.
+    </p>
+    <p>
+    <strong>Page:</strong> <a href="{%DocumentEditUrl%}">{%documentname%}</a> {% DocumentPreviewUrl.IsNullOrEmpty() ? "" : "(<a href=\"" + DocumentPreviewUrl + "\">preview</a>)"|(encode)false|(identity)GlobalAdministrator|(hash)ae5e1a3ec4035ae6ef4e63b2d7f8a037e53ccc781c3a810437e59aae290db2b0%}
+    <br />
+    <br />
+    <strong>Action:</strong> {%DocumentActionName%}
+    <br />
+    <strong>Modified by:</strong> {%User.Email|(identity)GlobalAdministrator|(hash)0ffbeeb3dfbed29542b9161eafe84a890472a996ca58b7b04d1da946723ee347%}
+    <br />
+    <strong>Modified when:</strong> {%approvedwhen%}
+    <br />
+    <strong>Original step:</strong> {%originalstepname%}
+    <br />
+    <strong>Current step:</strong> {%currentstepname%}
+    <br />
+    <strong>Comment:</strong>
+    <br />
+    {%comment%}
+    </p>
+  </body>
+</html>
+]]>
+  </EmailTemplateText>
+  <EmailTemplateType>workflow</EmailTemplateType>
+</cms.emailtemplate>

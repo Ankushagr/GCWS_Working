@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.attachment>
+  <AttachmentDocumentID>
+    <CodeName>en-US</CodeName>
+    <GUID>c7e406d8-df4f-41a5-9ee4-619126873fbc</GUID>
+    <ObjectType>cms.documentlocalization</ObjectType>
+    <Parent>
+      <CodeName>/Home/Carousel/Banner1</CodeName>
+      <GUID>1d052d17-d8f8-4349-a009-c884c816d975</GUID>
+      <ObjectType>cms.node</ObjectType>
+      <Site>
+        <CodeName>gcws</CodeName>
+        <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+        <ObjectType>cms.site</ObjectType>
+      </Site>
+    </Parent>
+  </AttachmentDocumentID>
+  <AttachmentExtension>.png</AttachmentExtension>
+  <AttachmentGUID>ecd72f57-a3a0-46ca-a6e6-1aba0f7cc4b1</AttachmentGUID>
+  <AttachmentImageHeight>506</AttachmentImageHeight>
+  <AttachmentImageWidth>1000</AttachmentImageWidth>
+  <AttachmentMimeType>image/png</AttachmentMimeType>
+  <AttachmentName>banner2.png</AttachmentName>
+  <AttachmentSiteID>
+    <CodeName>gcws</CodeName>
+    <GUID>d77d02d3-576f-40e3-89e5-885a3e20fe53</GUID>
+    <ObjectType>cms.site</ObjectType>
+  </AttachmentSiteID>
+  <AttachmentSize>926916</AttachmentSize>
+</cms.attachment>
